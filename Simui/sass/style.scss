@@ -26,614 +26,3623 @@ footer, header, hgroup, menu, nav, section {
 
 $titlecolor:#3f6c45;
 $formcolor:#e4ea8c;
-$border:2px solid $titlecolor;	
+$border:2px solid gold;
+$font:"Playfair Display", serif;
+$rgb: rgba(0,0,0,0.6);	
 
 
 
+body{
+font-family:$font;	
 
+}
 
 header{
-	position: fixed;
-	z-index:1;
+	width:100%; 
+	background:black; 
+	height:100px; 
+	display:none;
+	position:fixed;
+	border-bottom:2px solid gold;
+	
+	.hamburger{
+		background:none;
+		position:absolute;
+		top:0;
+		right:0;
+		line-height:45px;
+		margin:50px 20px 0px 20px;
+		color:white;
+		border:0;
+		font-size:2em;
+		font-weight:bold;
+		cursor:pointer;
+		outline:none;
+		z-index:10000000000000;
+		display: none;
+	}
+	.cross{
+		background:none;
+		position:absolute;
+		top:0px;
+		right:0;
+		margin:50px 20px 0px 20px;
+		color:white;
+		border:0;
+		font-size:4em;
+		line-height:65px;
+		font-weight:bold;
+		cursor:pointer;
+		outline:none;
+		z-index:10000000000000;
+	}
+	img{
+		display: none;
+		width: 100px;
+		position: absolute;
+	}
+}		
+nav{
+	background:rgba(0,0,0,0.8);
 	width: 100%;
-	height:57px;
-	box-shadow: 0px 1px 30px black;
-	background-color: rgba(0,0,0,0.7);
+	border-bottom: 2px solid gold;
+	display: block;
+	position:fixed;
 	a{
-		img[src="img/logo3.png"]{
+		img{
 			width: 200px;
-			margin-left: 40px;
-			display: inline-block;
+			z-index: 1;
+			position: absolute;
+			margin-left: 3%;
 		}
 		img:hover{
-			width: 205px;
+			width: 220px;
 		}
 	}
-	.toggle{		
-			display: none;
-			padding: 16px 30px 0px 0px;
-			margin:0;
-			text-align: right;
-			box-sizing:border-box;
-			color:white;
-			font-size: 30px;
-	}
-	nav{
-		position:fixed;
-		display: inline-block;
-		margin-left:100px;
-		line-height: 2.5;
-
-		
-		// label{
-		// 	// margin: 0 40px 0 0;
-		// 	font-size:26px;
-		// 	line-height: 70px;
-		// 	display: none;
-		// 	width:26px;
-		// 	float: right;
-		// 	color: white;
-		// }
-		// #toggle{
-		// 	display: none;
-		// @media only screen and(max-width:700px){#toggle:checked+ ul{display: block;}
-		// }
-		
-		ul{
-			list-style-type: none;
-			display: inline-block;
-			
-			li{
-				border-right:1px solid white;
-				display: inline-block;
-				margin-left: -3.5px;
-				a{
-					display: block;
-				    color: white;
-				    text-align: center;
-				    padding: 11px 40px;
-				    text-decoration: none;
-				}
-				a:hover{
-					color:#e4ea8c;
-					background-color: #505160;
-					text-decoration: none;
-				}
-			}
-			li:first-child{
-				border-left: 1px solid white;
-			}
-		}
-	}
-	div{
-		display: inline-block;
+	ul{
+		width: 82%;
+		// margin-right: 7%;
 		float: right;
-		margin-top: 40px;
-		margin-right:90px;
-		a{
-			text-decoration: none;
-			color: white;
-			padding: 1.5vh;
+		li{
+			display: inline-block;
+			padding: 20px 0px;
+
+			a{
+				text-decoration: none;
+				padding: 20px 70px; 
+				color: white;
+				font-weight: bold;
+				font-size: 20px;
+			}
+			a:hover{
+			}
 		}
-		a:hover{
-			color:#86AC41;
-			background-color: #505160;
-			text-decoration: none;
+		li:hover{
+				background :#505160;
 		}
 	}
 }
-				
 #nuline{
-	background-image:url("../img/1.2.png");
+	background-image: url("../img/1.2.png");
 	background-size: cover;
-	background-repeat: no-repeat;
-	height:100vh;
+	height:100%;
+	background-repeat:no-repeat;
+	font-weight:bold;
 	.wrapper{
-		// background-color: pink;
 		max-width: 1200px;
-		margin: auto;
-		// height: 100vh;
-		.lentelea{
-			z-index: 1;
-			max-width:885px;
-			margin: auto;
-			padding-top: 15%;
-			@media only screen and(max-width: 1315px){padding: 11px 28px;}
-			.pirma{
-				margin-right: 5px;
+		margin:auto;
+		h1{
+			color: white;
+			font-size: 45px;
+			text-align: center;
+			padding-top:17%;
+		}
+		div{
+			width: 100%;
+			padding-top: 10%;
+			margin: 0 auto;
+			.plentele{
 				display: inline-block;
-				background-color: $formcolor;
-				border-bottom: $border;
-				border-left: $border;
-				border-right: $border;
+				width: 40%;
+				background:$rgb;
+				border:$border;
+				border-radius:20px;
+				margin-left: 8%;
+				margin-right: 2%;
 				text-align: center;
-				border-radius: 20px;
-				opacity: 0.9;
-				.title{
-					text-align: center;
+				padding:0;
+				h1{
 					font-size: 30px;
-					font-weight: 300;
 					color: white;
-					padding: 15px;
-					background-color:$titlecolor;
-					border-radius: 16px;
+					background-color:#660033;
+					border-top-left-radius: 16px;
+					border-top-right-radius: 18px;
+					margin-left: 0.8px;
+					padding:16px 0px;
+					span{
+						font-weight: bold;
+						color: gold;
+					}
 				}
 				form{
-					div{
-						font-size: 20px;
-						line-height: 1.5;
+					padding:3% 0% 5% 0%;
+					font-size: 18px;
+					line-height: 60px;
+					color: white;
+					p{	
+					line-height: 0;
+					margin-top: 5%;					
+					}
+					.p{
+						text-align: center;
+						color: red;
+						font-size: 14px;
+						margin: 0;
+						margin-bottom: 5%;
+						font-family: monospace;
 					}
 					input{
-						display: block;
-						text-align: center;
-						margin: auto;
-						height: 40px;
-						width: 90%;
-						font-size: 27px;
-						border-radius:9px;
-						border-style: none;
+						padding:7px;
+						border-radius: 5px;
 					}
-					a{
-						display: block;
-						margin: auto;
-						margin-top: 18px;
-						margin-bottom: 18px;
-						width: 90%;
-						border-radius:9px;
+					.button{
 						text-align: center;
 						font-size: 15px;
 						font-weight: bold;
 						color: black;
-						padding:12px;
-						background-color: orange;
+						background-color:orange;
+						padding:2% 30%;
+						text-decoration: none;
+						border-radius:5px;
 					}
 				}
 			}
-			.antra{
+			.alentele{
 				display: inline-block;
-				background-color: $formcolor;
-				border-bottom: $border;
-				border-left: $border;
-				border-right: $border;
+				width: 40%;
+				background:$rgb;
+				border:$border;
+				border-radius:20px;
 				text-align: center;
-				border-radius: 20px;
-				opacity: 0.9;
-				.title{
-					text-align: center;
+				padding:0;
+				h1{
 					font-size: 30px;
-					font-weight: 300;
 					color: white;
-					padding: 15px;
-					background-color:$titlecolor;
-					border-radius: 16px;
+					background-color:#660033;
+					border-top-left-radius: 16px;
+					border-top-right-radius: 18px;
+					margin-right: 0.8px;
+					padding:16px 0px;
+					span{
+						font-weight: bold;
+						color: gold;
+					}
 				}
 				form{
-					div{
-						font-size: 20px;
-						line-height: 1.5;
+					padding:3% 0% 5% 0%;
+					font-size: 18px;
+					line-height: 60px;
+					color: white;
+					p{	
+					line-height: 0;
+					margin-top: 5%;					
+					}
+					.p{
+						text-align: center;
+						color: red;
+						font-size: 14px;
+						margin: 0;
+						margin-bottom: 5%;
+						font-family: monospace; 
 					}
 					input{
-						display: block;
-						text-align: center;
-						margin: auto;
-						height: 40px;
-						width: 90%;
-						font-size: 27px;
-						border-radius:9px;
-						border-style: none;
+						padding:7px;
+						border-radius: 5px;
 					}
-					a{
-						display: block;
-						margin: auto;
-						margin-bottom: 18px;
-						width: 90%;
-						border-radius:9px;
+					.button{
 						text-align: center;
 						font-size: 15px;
 						font-weight: bold;
 						color: black;
-						padding:12px;
-						background-color: orange;
+						background-color:orange;
+						padding:2% 30%;
+						text-decoration: none;
+						border-radius:5px;
 					}
 				}
 			}
 		}
 	}
-}	
-
-
+}
 #pirma{
-	background-image:url("../img/555.jpg");
+	background-image: url("../img/7.jpg");
 	background-size: cover;
-	background-repeat: no-repeat;
-	height:100vh;
+	height:100%;
+	background-repeat:no-repeat;
+	.wrapper{
+		max-width: 1200px;
+		margin:auto;
+		h1{
+			color: white;
+			font-size: 45px;
+			text-align: center;
+			padding-top:17%;
+			font-weight:bold;
+		}
+		div{
+			width: 100%;
+			padding-top: 10%;
+			margin: 0 auto;
+			.palentele{
+				display: inline-block;
+				width: 40%;
+				background:$rgb;
+				border:$border;
+				border-radius:20px;
+				margin-left: 8%;
+				margin-right: 2%;
+				text-align: center;
+				padding:0;
+				h1{
+					font-size: 30px;
+					color: white;
+					background-color:#154360  ;
+					border-top-left-radius: 16px;
+					border-top-right-radius: 18px;
+					margin-left: 0.8px;
+					padding:30px 0px;
+					span{
+						font-weight: bold;
+						color: gold;
+					}
+				}
+				form{
+					padding:3% 0% 5% 0%;
+					font-size: 18px;
+					line-height: 60px;
+					color: white;
+					p{	
+					line-height: 0;
+					margin-top: 5%;					
+					}
+					input{
+						padding:7px;
+						border-radius: 5px;
+					}
+					.button{
+						text-align: center;
+						font-size: 15px;
+						font-weight: bold;
+						color: black;
+						background-color:orange;
+						padding:2% 30%;
+						text-decoration: none;
+						border-radius:5px;
+					}
+				}
+			}
+			.aalentele{
+				display: inline-block;
+				width: 40%;
+				background:$rgb;
+				border:$border;
+				border-radius:20px;
+				text-align: center;
+				padding:0;
+				h1{
+					font-size: 30px;
+					color: white;
+					background-color:#154360  ;
+					border-top-left-radius: 16px;
+					border-top-right-radius: 18px;
+					margin-right: 0.8px;
+					padding:30px 0px;
+					span{
+						font-weight: bold;
+						color: gold;
+					}
+				}
+				form{
+					padding:3% 0% 5% 0%;
+					font-size: 18px;
+					line-height: 60px;
+					color: white;
+					p{	
+					line-height: 0;
+					margin-top: 5%;					
+					}
+					input{
+						padding:7px;
+						border-radius: 5px;
+					}
+					.button{
+						text-align: center;
+						font-size: 15px;
+						font-weight: bold;
+						color: black;
+						background-color:orange;
+						padding:2% 30%;
+						text-decoration: none;
+						border-radius:5px;
+					}
+				}
+			}
+		}
+	}
 }
 #antra{
-	background-image:url("../img/888.jpg");
+	background-image: url("../img/1.jpg");
 	background-size: cover;
-	background-repeat: no-repeat;
-	height:100vh;
+	background-attachment: fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	.wrapper{
+		max-width: 1200px;
+		margin:auto;
+		div{
+			padding-top:4%;
+			padding-bottom: 7%;
+			h1{
+				color: white;
+				font-size: 45px;
+				text-align: center;
+				padding-top:8%;
+				font-weight:bold;
+				padding-bottom: 3%;
+			}
+			.antraste{
+				border: 2px solid gold;
+				padding-top:2%;
+				background-color:$rgb;
+				padding-bottom: 3%;
+				p{
+					font-size: 16px;
+				    color:white;
+				    margin: 1% 2%;
+
+				    strong{
+				    	color: gold;
+				    	
+
+				    }
+				}
+				p:last-child{
+				}
+			}			
+		}
+	}
 }
 #trecia{
-	background-image:url("../img/6.jpg");
+	background-image: url("../img/2.jpg");
 	background-size: cover;
-	background-repeat: no-repeat;
-	height:100vh;
+	background-repeat:no-repeat;
+	height:100%;
+	.wrapper{
+		// max-width: 1200px;
+		
+		h1{
+			color: black;
+			font-size: 45px;
+			margin-left: 20%;
+			// text-align: center -50%;
+			padding-top:5%;
+			font-weight:bold;
+			padding-bottom: 3%;
+		}
+		p{
+			font-size: 20px;
+			color: black;
+			text-indent:30px;
+			// padding-bottom: 20%;
+			font-weight: bold;
+			width: 40%;
+			margin-left:6%;
+		}
+		p:last-child{
+			padding-bottom: 20%;
+		}
+	}
+}
+#ketvirta{
+	background-image: url("../img/5.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	.wrapper{
+		max-width: 1200px;
+		margin:auto;
+		padding-bottom:7%;
+		h1{
+			color: white;
+			font-size: 45px;
+			text-align: center;
+			padding-top:8%;
+			font-weight:bold;
+			padding-bottom: 3%;
+		}
+		div{
+			border: 2px solid gold;
+			padding-top:2%;
+			background-color:$rgb;
+			padding-bottom: 3%;
+			p{
+				font-size: 16px;
+			    color: white;
+			    margin: 1% 2%;
+			    strong{
+			    	color: gold;
+
+			    }
+			}
+			p:last-child{
+			}
+		}
+	}
+}
+#penkta{
+	background-image: url("../img/006.jpg");
+	height:100%;
+	background-size: cover;
+	background-repeat:no-repeat;
+	.wrapper{
+		max-width: 1200px;
+		margin:auto;
+		h1{
+			text-align: center;
+		    padding-top: 7%;
+		    padding-bottom: 30px;
+		    font-size: 45px;
+		    font-weight: bold;
+		    color: black;
+		}
+		div{
+			p{
+				font-size: 20px;
+				padding-top: 2%;
+				color:black;
+				font-weight: bold;
+				text-align: center;
+				padding-bottom:0;
+			}
+			div{
+				margin: auto;
+				margin-top: 3%;
+				padding-bottom:0;
+				width: 180px;
+				a{
+					img[src="img/skype.png"]{
+						height: 80px;
+						margin-right:2%;
+					}
+				}
+				a{
+					img[src="img/1-facebook.png"]{
+						height: 80px;
+					}
+				}
+			}
+		}
+		p{
+			color: black;
+			font-weight: bold;
+			font-size: 30px;
+			text-align: center;
+			padding-bottom:3%;
+		}
+		div{
+			padding-bottom:3%;
+			img[src="img/paypal_logo1.jpg"]{
+				width: 30%;
+				height: 200px;
+				margin-left: 18%;
+				margin-right: 3%;
+				display: inline-block;
+
+			}
+			img[src="img/payments_320.jpg"]{
+				width: 28%; 
+				height: 200px;
+			}
+		}
+	}
+}
+footer{
+	background-color:black;
+	width:100%;
+	height:50px;
+	bottom:0px;
+	border-top:2px solid gold;
 }
 
+
+	
 
 @media only screen and(max-width: 2000px){
 	header{
+		.hamburger{		
+		}
+		.cross{	
+		}
+		img{		
+		}
+	}
+	nav{
 		a{
-			img[src="img/logo3.png"]{
-			}
-			img:hover{
+			img{
 			}
 		}
-		nav{
-			label{
+		ul{
+			li{	
+				a{
+				}
 			}
-			#toggle{
+			.active{
+				display:block;
 			}
-			ul{
-				li{
-					a{
-					    padding: 11px 68px;
+			li:hover{
+			}
+		}
+	}	
+	#nuline{
+		height: 100vh;
+		.wrapper{
+			h1{
+			}
+			div{
+				.plentele{
+					h1{
+						span{
+						}
 					}
-					a:hover{
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
 					}
 				}
 			}
 		}
-		div{
-			a{
-			}
-			a:hover{
-			}
-		}
 	}
-}
-@media only screen and(max-width: 1815px){
-	header{
-		a{
-			img[src="img/logo3.png"]{
+	#pirma{
+		height: 100vh;
+		.wrapper{
+			h1{
 			}
-			img:hover{
-			}
-		}
-		nav{
-			label{
-			}
-			#toggle{
-			}
-			ul{
-				li{
-					a{
-					    padding: 11px 60px;
+			div{
+				.plentele{
+					h1{
+						span{
+						}
 					}
-					a:hover{
+					form{
+						p{				
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
 					}
 				}
 			}
 		}
-		div{
-			a{
-			}
-			a:hover{
+	}
+	#antra{
+		.wrapper{
+			div{
+				h1{
+				}
+				p{
+				    strong{
+				    }
+				}
+				p:last-child{
+				}
 			}
 		}
 	}
-}
-@media only screen and(max-width: 1720px){
-	header{
-		a{
-			img[src="img/logo3.png"]{
+	#trecia{
+		.wrapper{
+			h1{
 			}
-			img:hover{
+			p{
 			}
 		}
-		nav{
-			label{
+	}
+	#ketvirta{
+		.wrapper{
+			h1{
+				padding-top:10%;
+				padding-bottom: 3%;
 			}
-			#toggle{
+			p{
+			    strong{
+			    }
 			}
-			ul{
-				li{
+			p:last-child{
+			}
+		}
+	}
+	#penkta{
+		.wrapper{
+			h1{
+		    padding-top: 10%;
+		    padding-bottom: 4%;
+		    font-size: 45px;
+			}
+			div{
+				p{
+				}
+				div{
 					a{
-					    padding: 11px 50px;
+						img[src="img/skype.png"]{
+						}
 					}
-					a:hover{
+					a{
+						img[src="img/1-facebook.png"]{
+						}
+					}
+				}
+			}
+			p{
+			}
+			div{
+				img[src="img/paypal_logo1.jpg"]{
+				}
+				img[src="img/payments_320.jpg"]{
+				}
+			}
+		}
+	}
+	footer{
+	}
+}	
+@media only screen and(max-width: 1817px){
+	header{
+		.hamburger{		
+		}
+		.cross{	
+		}
+		img{		
+		}
+	}
+	nav{
+		a{
+			img{
+			}
+		}
+		ul{
+			li{	
+				a{
+					padding: 20px 60px;
+				}
+			}
+			.active{
+				display:block;
+			}
+			li:hover{
+			}
+		}
+	}	
+	#nuline{
+		height: 100vh;
+		.wrapper{
+			h1{
+			}
+			div{
+				.plentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
 					}
 				}
 			}
 		}
-		div{
-			a{
-			}
-			a:hover{
-			}
-		}
 	}
-}
-@media only screen and(max-width: 1610px){
-	header{
-		a{
-			img[src="img/logo3.png"]{
+	#pirma{
+		height: 100vh;
+		.wrapper{
+			h1{
 			}
-			img:hover{
-			}
-		}
-		nav{
-			label{
-			}
-			#toggle{
-			}
-			ul{
-				li{
-					a{
-					    padding: 11px 40px;
+			div{
+				.plentele{
+					h1{
+						span{
+						}
 					}
-					a:hover{
+					form{
+						p{				
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
 					}
 				}
 			}
 		}
-		div{
-			margin-right:150px;
-			a{
-			}
-			a:hover{
-			}
-		}
 	}
-}
-@media only screen and(max-width: 1550px){
-	header{
-		a{
-			img[src="img/logo3.png"]{
-			}
-			img:hover{
-			}
-		}
-		nav{
-			label{
-			}
-			#toggle{
-			}
-			ul{
-				li{
-					a{
-					    padding: 11px 35px;
-					}
-					a:hover{
-					}
+	#antra{
+		.wrapper{
+			div{
+				h1{
+				}
+				p{
+				    strong{
+				    }
+				}
+				p:last-child{
 				}
 			}
 		}
-		div{
-			a{
+	}
+	#trecia{
+		.wrapper{
+			h1{
 			}
-			a:hover{
+			p{
 			}
 		}
 	}
-}
-@media only screen and(max-width: 1485px){
-	header{
-		a{
-			img[src="img/logo3.png"]{
+	#ketvirta{
+		.wrapper{
+			h1{
 			}
-			img:hover{
+			p{
+			    strong{
+			    }
+			}
+			p:last-child{
 			}
 		}
-		nav{
-			label{
+	}
+	#penkta{
+		.wrapper{
+			h1{
 			}
-			#toggle{
-			}
-			ul{
-				li{
+			div{
+				p{
+				}
+				div{
 					a{
-					    padding: 11px 30px;
+						img[src="img/skype.png"]{
+						}
 					}
-					a:hover{
+					a{
+						img[src="img/1-facebook.png"]{
+						}
 					}
 				}
 			}
-		}
-		div{
-			a{
+			p{
 			}
-			a:hover{
-			}
-		}
-	}
-}
-@media only screen and(max-width: 1423px){
-	header{
-		a{
-			img[src="img/logo3.png"]{
-			}
-			img:hover{
-			}
-		}
-		nav{
-			label{
-			}
-			#toggle{
-			}
-			ul{
-				li{
-					a{
-					    padding: 11px 25px;
-					}
-					a:hover{
-					}
+			div{
+				img[src="img/paypal_logo1.jpg"]{
+				}
+				img[src="img/payments_320.jpg"]{
 				}
 			}
 		}
-		div{
-			margin-right:90px;
-			a{
-			}
-			a:hover{
-			}
-		}
+	}
+	footer{
 	}
 }
-@media only screen and(max-width: 1315px){
+@media only screen and(max-width: 1674px){
 	header{
+		.hamburger{		
+		}
+		.cross{	
+		}
+		img{		
+		}
+	}
+	nav{
 		a{
-			img[src="img/logo3.png"]{
-				width:150px;
-				padding-top:2px;
-			}
-			img:hover{
+			img{
 			}
 		}
-		nav{
-			margin-left:100px;
-			label{
-			}
-			#toggle{
-			}
-			ul{
-				li{
-					a{
-					    padding: 11px 28px;
-					}
-					a:hover{
-					}
+		ul{
+			li{	
+				a{
+					padding: 20px 50px;
 				}
 			}
-		}
-		div{
-			margin-right:30px;
-			a{
+			.active{
+				display:block;
 			}
-			a:hover{
+			li:hover{
 			}
 		}
-	}
-}
-@media only screen and(max-width:1242px){
-	header{
-		a{
-			img[src="img/logo3.png"]{
-				width:150px;
-				padding-top:2px;
-			}
-			img:hover{
-			}
-		}
-		nav{
-			margin-left:60px;
-			label{
-			}
-			#toggle{
-			}
-			ul{
-				li{
-					a{
-					}
-					a:hover{
-					}
-				}
-			}
-		}
-		div{
-			margin-right:30px;
-			a{
-			}
-			a:hover{
-			}
-		}
-	}
-}
-@media only screen and(max-width:1200px){ 
-	header{
-		a{
-			img[src="img/logo3.png"]{
-				width:150px;
-				padding-top:2px;
-			}
-			img:hover{
-			}
-		}
-		nav{
-			margin-left:50px;
-			label{
-			}
-			#toggle{
-			}
-			ul{
-				li{
-					a{
-						padding: 11px 20px;
-					}
-					a:hover{
-					}
-				}
-			}
-		}
-		div{
-			margin-right:30px;
-			a{
-			}
-			a:hover{
-			}
-		}
-	}
-}
-@media only screen and(max-width: 700px){
-	header{
-		a{
-			img[src="img/logo3.png"]{
-			}
-			img:hover{
-			}
-		}
-		.toggle{
-			display: block;
-		}
-		
-
-		
-		nav{
+	}	
+	#nuline{
+		.wrapper{
+			h1{
 			
-			// label{
-			// 	display: block;
-			// 	cursor:pointer;
-			// }
-			// #toggle{
-			// }
-			ul{
-				text-align:center;
-				width:100%;
-				display:none;
-				li{
-					.active{
-						display: block;
+			}
+			div{
+				
+				.plentele{
+					h1{
+						span{
+						}
 					}
-					display: block;
-					a{
-					    padding: 11px 20px;
-					    text-align: center;
-					    display: block;
-					    float: none;
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
 					}
-					a:hover{
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
 					}
 				}
 			}
 		}
-		div{
-			display:none;
-			cursor:pointer;
-			a{
+	}
+	#pirma{
+		.wrapper{
+			h1{
+				
 			}
-			a:hover{
+			div{
+				
+				.plentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{				
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
 			}
 		}
 	}
+	#antra{
+		.wrapper{
+			div{
+				
+				h1{
+				}
+				p{
+				    strong{
+				    }
+				}
+				p:last-child{
+				}
+			}
+		}
+	}
+	#trecia{
+		.wrapper{
+			h1{
+			}
+			p{
+			}
+		}
+	}
+	#ketvirta{
+		.wrapper{
+			h1{
+				
+			}
+			p{
+			    strong{
+			    }
+			}
+			p:last-child{
+			}
+		}
+	}
+	#penkta{
+		.wrapper{
+			h1{
+			}
+			div{
+				p{
+				}
+				div{
+					a{
+						img[src="img/skype.png"]{
+						}
+					}
+					a{
+						img[src="img/1-facebook.png"]{
+						}
+					}
+				}
+			}
+			p{
+			}
+			div{
+				img[src="img/paypal_logo1.jpg"]{
+				}
+				img[src="img/payments_320.jpg"]{
+				}
+			}
+		}
+	}
+	footer{
+	}
 }
+@media only screen and(max-width: 1590px){
+	header{
+		.hamburger{		
+		}
+		.cross{	
+		}
+		img{		
+		}
+	}
+	nav{
+		a{
+			img{
+			}
+		}
+		ul{
+			li{	
+				a{
+					padding: 20px 43px;
+				}
+			}
+			.active{
+				display:block;
+			}
+			li:hover{
+			}
+		}
+	}	
+	#nuline{
+		.wrapper{
+			h1{
+			padding-top:9%;
+			}
+			div{
+				padding-top:5%;
+				.plentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#pirma{
+		.wrapper{
+			h1{
+				padding-top:9%;
+			}
+			div{
+				padding-top: 5%;
+				.plentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{				
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#antra{
+		.wrapper{
+			div{
+				padding-top: 9%;
+				h1{
+					padding-top:1.5%;
+				}
+				p{
+				    strong{
+				    }
+				}
+				p:last-child{
+				}
+			}
+		}
+	}
+	#trecia{
+		.wrapper{
+			h1{
+			}
+			p{
+			}
+		}
+	}
+	#ketvirta{
+		.wrapper{
+			h1{
+				padding-top:9%;
+			}
+			p{
+			    strong{
+			    }
+			}
+			p:last-child{
+			}
+		}
+	}
+	#penkta{
+		.wrapper{
+			h1{
+			}
+			div{
+				p{
+				}
+				div{
+					a{
+						img[src="img/skype.png"]{
+						}
+					}
+					a{
+						img[src="img/1-facebook.png"]{
+						}
+					}
+				}
+			}
+			p{
+			}
+			div{
+				img[src="img/paypal_logo1.jpg"]{
+				}
+				img[src="img/payments_320.jpg"]{
+				}
+			}
+		}
+	}
+	footer{
+	}
+}
+@media only screen and(max-width: 1425px){
+	header{
+		.hamburger{		
+		}
+		.cross{	
+		}
+		img{		
+		}
+	}
+	nav{
+		a{
+			img{
+			}
+		}
+		ul{
+			li{	
+				a{
+					padding: 20px 45px;
+					font-size: 18px;
+				}
+			}
+			.active{
+				display:block;
+			}
+			li:hover{
+			}
+		}
+	}
+	#nuline{
+		.wrapper{
+			h1{
+			}
+			div{
+				padding-top:4%;
+				.plentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#pirma{
+		.wrapper{
+			h1{
+			}
+			div{
+				.plentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{				
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#antra{
+		.wrapper{
+			div{
+				h1{
+				}
+				p{
+				    strong{
+				    }
+				}
+				p:last-child{
+				}
+			}
+		}
+	}
+	#trecia{
+		.wrapper{
+			h1{
+			}
+			p{
+			}
+		}
+	}
+	#ketvirta{
+		.wrapper{
+			h1{
+				padding-top:10%;
+				padding-bottom: 3%;
+			}
+			p{
+			    strong{
+			    }
+			}
+			p:last-child{
+			}
+		}
+	}
+	#penkta{
+		.wrapper{
+			h1{
+		    padding-top: 10%;
+		    padding-bottom: 4%;
+		    font-size: 45px;
+			}
+			div{
+				p{
+				}
+				div{
+					a{
+						img[src="img/skype.png"]{
+						}
+					}
+					a{
+						img[src="img/1-facebook.png"]{
+						}
+					}
+				}
+			}
+			p{
+			}
+			div{
+				img[src="img/paypal_logo1.jpg"]{
+				}
+				img[src="img/payments_320.jpg"]{
+				}
+			}
+		}
+	}
+	footer{
+	}	
+}
+@media only screen and(max-width: 1380px){
+	header{
+		.hamburger{		
+		}
+		.cross{	
+		}
+		img{		
+		}
+	}
+	nav{
+		a{
+			img{
+
+			}
+		}
+		ul{
+			li{	
+				a{
+					padding:20px 35px;
+				}
+			}
+			.active{
+				display:block;
+			}
+			li:hover{
+			}
+		}
+	}	
+}
+@media only screen and(max-width: 1280px){
+	header{
+		.hamburger{		
+		}
+		.cross{	
+		}
+		img{		
+		}
+	}
+	nav{
+		a{
+			img{
+				width: 170px;
+				margin-top:6px;
+			}
+		}
+		ul{
+			li{	
+				a{
+				}
+			}
+			.active{
+				display:block;
+			}
+			li:hover{
+			}
+		}
+	}
+	#nuline{
+		.wrapper{
+			h1{
+			}
+			div{
+				.plentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#pirma{
+		.wrapper{
+			h1{
+			}
+			div{
+				.plentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{				
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#antra{
+		.wrapper{
+			div{
+				h1{
+				}
+				p{
+				    strong{
+				    }
+				}
+				p:last-child{
+				}
+			}
+		}
+	}
+	#trecia{
+		.wrapper{
+			h1{
+			}
+			p{
+				width: 42%;
+			}
+		}
+	}
+	#ketvirta{
+		.wrapper{
+			h1{
+			}
+			p{
+			    strong{
+			    }
+			}
+			p:last-child{
+			}
+		}
+	}
+	#penkta{
+		.wrapper{
+			h1{
+			}
+			div{
+				p{
+				}
+				div{
+					a{
+						img[src="img/skype.png"]{
+						}
+					}
+					a{
+						img[src="img/1-facebook.png"]{
+						}
+					}
+				}
+			}
+			p{
+			}
+			div{
+				img[src="img/paypal_logo1.jpg"]{
+				}
+				img[src="img/payments_320.jpg"]{
+				}
+			}
+		}
+	}
+	footer{	
+	}
+}
+@media only screen and(max-width: 1230px){
+	header{
+		.hamburger{		
+		}
+		.cross{	
+		}
+		img{		
+		}
+	}
+	nav{
+		a{
+			img{
+			}
+		}
+		ul{
+			li{	
+				a{
+					padding:20px 25px;
+				}
+			}
+			.active{
+				display:block;
+			}
+			li:hover{
+			}
+		}
+	}
+	#nuline{
+		.wrapper{
+			h1{
+				font-size: 40px;
+			}
+			div{
+				.plentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#pirma{
+		.wrapper{
+			h1{
+				font-size: 40px;
+			}
+			div{
+				.plentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{				
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#antra{
+		.wrapper{
+			div{
+				h1{
+				}
+				p{
+				    strong{
+				    }
+				}
+				p:last-child{
+				}
+			}
+		}
+	}
+	#trecia{
+		.wrapper{
+			h1{
+			}
+			p{
+				width: 44%;
+			}
+		}
+	}
+	#ketvirta{
+		.wrapper{
+			h1{
+			}
+			p{
+			    strong{
+			    }
+			}
+			p:last-child{
+			}
+		}
+	}
+	#penkta{
+		.wrapper{
+			h1{
+			}
+			div{
+				p{
+				}
+				div{
+					a{
+						img[src="img/skype.png"]{
+						}
+					}
+					a{
+						img[src="img/1-facebook.png"]{
+						}
+					}
+				}
+			}
+			p{
+			}
+			div{
+				img[src="img/paypal_logo1.jpg"]{
+				}
+				img[src="img/payments_320.jpg"]{
+				}
+			}
+		}
+	}
+	footer{
+	}	
+}
+@media only screen and(max-width: 1130px){
+	header{
+		.hamburger{		
+		}
+		.cross{	
+		}
+		img{		
+		}
+	}
+	nav{
+		a{
+			img{
+			}
+		}
+		ul{
+			li{	
+				a{
+				}
+			}
+			.active{
+			}
+			li:hover{
+			}
+		}
+	}
+	#nuline{
+		.wrapper{
+			h1{
+			}
+			div{
+				.plentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#pirma{
+		.wrapper{
+			h1{
+			}
+			div{
+				.plentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{				
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#antra{
+		.wrapper{
+			div{
+				h1{
+				}
+				p{
+				    strong{
+				    }
+				}
+				p:last-child{
+				}
+			}
+		}
+	}
+	#trecia{
+		.wrapper{
+			h1{
+			}
+			p{
+				width: 48%;
+			}
+		}
+	}
+	#ketvirta{
+		.wrapper{
+			h1{
+			}
+			p{
+			    strong{
+			    }
+			}
+			p:last-child{
+			}
+		}
+	}
+	#penkta{
+		.wrapper{
+			h1{
+			}
+			div{
+				p{
+				}
+				div{
+					a{
+						img[src="img/skype.png"]{
+						}
+					}
+					a{
+						img[src="img/1-facebook.png"]{
+						}
+					}
+				}
+			}
+			p{
+			}
+			div{
+				img[src="img/paypal_logo1.jpg"]{
+				}
+				img[src="img/payments_320.jpg"]{
+				}
+			}
+		}
+	}
+	footer{
+	}	
+}
+@media only screen and(max-width: 1090px){
+	header{
+		.hamburger{		
+		}
+		.cross{	
+		}
+		img{		
+		}
+	}
+		nav{
+			a{
+				img{
+				}
+			}
+			ul{
+				li{	
+					a{
+						padding:20px 18px;
+						font-size: 15px;
+				}
+				.active{
+					display:block;
+				}
+				li:hover{
+				}
+			}
+		}
+		#nuline{
+			.wrapper{
+				h1{
+					font-size: 40px;
+				}
+				div{
+					.plentele{
+						h1{
+							span{
+							}
+						}
+						form{
+							p{			
+							}
+							input{
+							}
+							.button{
+							}
+						}
+					}
+					.alentele{
+						h1{
+							span{
+							}
+						}
+						form{
+							p{			
+							}
+							input{
+							}
+							.button{
+							}
+						}
+					}
+				}
+			}
+		}
+		#pirma{
+			.wrapper{
+				h1{
+				}
+				div{
+					.plentele{
+						h1{
+							span{
+							}
+						}
+						form{
+							p{				
+							}
+							input{
+							}
+							.button{
+							}
+						}
+					}
+					.alentele{
+						h1{
+							span{
+							}
+						}
+						form{
+							p{			
+							}
+							input{
+							}
+							.button{
+							}
+						}
+					}
+				}
+			}
+		}
+		#antra{
+			.wrapper{
+				div{
+					h1{
+					}
+					p{
+					    strong{
+					    }
+					}
+					p:last-child{
+					}
+				}
+			}
+		}
+		#trecia{
+			.wrapper{
+				h1{
+				}
+				p{
+				}
+			}
+		}
+		#ketvirta{
+			.wrapper{
+				h1{
+				}
+				p{
+				    strong{
+				    }
+				}
+				p:last-child{
+				}
+			}
+		}
+		#penkta{
+			.wrapper{
+				h1{
+				}
+				div{
+					p{
+					}
+					div{
+						a{
+							img[src="img/skype.png"]{
+							}
+						}
+						a{
+							img[src="img/1-facebook.png"]{
+							}
+						}
+					}
+				}
+				p{
+				}
+				div{
+					img[src="img/paypal_logo1.jpg"]{
+					}
+					img[src="img/payments_320.jpg"]{
+					}
+				}
+			}
+		}
+	}
+	footer{
+	}	
+}
+@media only screen and(max-width: 990px){
+	header{
+		.hamburger{		
+		}
+		.cross{	
+		}
+		img{		
+		}
+	}
+	nav{
+		a{
+			img{
+				width: 150px;
+				margin-top:12px;
+				margin-left: 2%;
+			}
+		}
+		ul{
+			li{	
+				a{
+				}
+			}
+			.active{
+				display:block;
+			}
+			li:hover{
+			}
+		}
+	}
+		#nuline{
+		.wrapper{
+			h1{
+			}
+			div{
+				.plentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#pirma{
+		.wrapper{
+			h1{
+			}
+			div{
+				.plentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{				
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#antra{
+		.wrapper{
+			div{
+				h1{
+				}
+				p{
+				    strong{
+				    }
+				}
+				p:last-child{
+				}
+			}
+		}
+	}
+	#trecia{
+		.wrapper{
+			h1{
+			}
+			p{
+				width: 140vh;
+			}
+		}
+	}
+	#ketvirta{
+		.wrapper{
+			h1{
+			}
+			p{
+			    strong{
+			    }
+			}
+			p:last-child{
+			}
+		}
+	}
+	#penkta{
+		.wrapper{
+			h1{
+			}
+			div{
+				p{
+				}
+				div{
+					a{
+						img[src="img/skype.png"]{
+						}
+					}
+					a{
+						img[src="img/1-facebook.png"]{
+						}
+					}
+				}
+			}
+			p{
+			}
+			div{
+				img[src="img/paypal_logo1.jpg"]{
+				}
+				img[src="img/payments_320.jpg"]{
+				}
+			}
+		}
+	}
+	footer{
+	}	
+}																													
+@media only screen and(max-width: 900px){
+	header{
+		display: block;
+			.hamburger{
+				display: block;
+			}
+			.cross{
+				display: block;
+			}
+			img{
+				display: block;
+			}
+	}
+	nav{
+		display: block;
+		border-bottom:none;
+		display: none;
+		margin-top: 100px;
+
+		a{
+			img{
+				display: none;
+			}
+		}
+
+		ul{
+			width: 100%;
+			margin-right: 0;
+			li{	
+				display: block;	
+				text-align: center;
+				border-bottom: 1px solid white;	
+				a{
+				}
+			}
+			.active{
+				display:block;
+			}
+			li:hover{
+			}
+		}
+	}
+	#nuline{
+		.wrapper{
+			h1{
+				font-size: 40px;
+				// padding-top: 40%;
+			}
+			div{
+				.plentele{
+						
+					h1{
+						span{
+						}
+					}
+					form{
+						font-size: 16px;
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						font-size: 16px;
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#pirma{
+		.wrapper{
+			h1{
+				font-size: 40px;
+				// padding-top: 40%;
+			}
+			div{
+				.palentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						font-size: 16px;
+						p{				
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.aalentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						font-size: 16px;
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#antra{
+			.wrapper{
+				div{
+					h1{
+						font-size: 40px;
+						// padding-top: 40%;
+					}
+					p{
+					    strong{
+					    }
+					}
+					p:last-child{
+					}
+				}
+			}
+		}
+	#trecia{
+			.wrapper{
+				h1{
+					font-size: 40px;
+					margin-left: 26%;
+				}
+				p{
+				}
+			}
+	}
+	#ketvirta{
+			.wrapper{
+				h1{
+					font-size: 40px;
+					// padding-top: 40%;
+				}
+				p{
+				    strong{
+				    }
+				}
+				p:last-child{
+				}
+			}
+	}
+	#penkta{
+		.wrapper{
+			h1{
+				font-size: 40px;
+				// padding-top: 40%;
+			}
+			div{
+				p{
+				}
+				div{
+					a{
+						img[src="img/skype.png"]{
+						}
+					}
+					a{
+						img[src="img/1-facebook.png"]{
+						}
+					}
+				}
+			}
+			p{
+			}
+			div{
+				img[src="img/paypal_logo1.jpg"]{
+				}
+				img[src="img/payments_320.jpg"]{
+				}
+			}
+		}
+	}
+	footer{
+	}
+}
+@media only screen and(max-width: 800px){
+	header{
+		.hamburger{
+		}
+		.cross{
+		}
+		img{
+		}
+	}
+	nav{
+
+		a{
+			img{
+				display: none;
+			}
+		}
+
+		ul{
+			li{	
+				a{
+				}
+			}
+			.active{
+				display:block;
+			}
+			li:hover{
+			}
+		}
+	}
+	#nuline{
+		.wrapper{
+			h1{
+				font-size: 40px;
+			}
+			div{
+				.plentele{
+						
+					h1{
+						span{
+						}
+					}
+					form{
+						font-size: 16px;
+						p{			
+						}
+						.p{
+							margin-bottom: 5%;
+						}
+						#milai{
+							// margin-bottom:30px;
+						}
+						input{
+						}
+						label{
+							line-height:0;
+							display: block;
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						font-size: 16px;
+						p{			
+						}
+						.p{
+							margin-bottom: 5%;
+						}
+						#milaia{
+							// margin-bottom:30px;
+						}
+						input{
+						}
+						label{
+							line-height:0;
+							display: block;
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#pirma{
+		.wrapper{
+			h1{
+			}
+			div{
+				.palentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						font-size: 16px;
+						p{				
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.aalentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						font-size: 16px;
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#antra{
+		.wrapper{
+			div{
+				h1{
+				}
+				p{
+				    strong{
+				    }
+				}
+				p:last-child{
+				}
+			}
+		}
+	}
+	#trecia{
+		.wrapper{
+			h1{
+				margin-left: 26%;
+			}
+			p{
+				width: 63%;
+			}
+		}
+	}
+	#ketvirta{
+		.wrapper{
+			h1{
+			}
+			p{
+			    strong{
+			    }
+			}
+			p:last-child{
+			}
+		}
+	}
+	#penkta{
+		.wrapper{
+			h1{
+			}
+			div{
+				p{
+				}
+				div{
+					a{
+						img[src="img/skype.png"]{
+						}
+					}
+					a{
+						img[src="img/1-facebook.png"]{
+						}
+					}
+				}
+			}
+			p{
+			}
+			div{
+				img[src="img/paypal_logo1.jpg"]{
+				}
+				img[src="img/payments_320.jpg"]{
+				}
+			}
+		}
+	}
+	footer{
+	}
+}
+@media only screen and(max-width: 750px){
+	header{
+		.hamburger{
+		}
+		.cross{
+		}
+		img{
+		}
+	}
+	nav{
+
+		a{
+			img{
+				display: none;
+			}
+		}
+
+		ul{
+			li{	
+				a{
+				}
+			}
+			.active{
+				display:block;
+			}
+			li:hover{
+			}
+		}
+	}
+	#nuline{
+		height: 100%;
+		.wrapper{
+			h1{
+				font-size: 40px;
+			}
+			div{
+				.plentele{
+					display: block;
+					width: 80%;
+					margin:auto;
+					margin-bottom: 4%;					
+					h1{
+						span{
+						}
+					}
+					form{
+						font-size: 16px;
+						p{			
+						}
+						#milai{
+						}
+						input{
+						}
+						label{
+							display: inline-block;
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					width: 80%;
+					margin-left: 10%;
+					margin-bottom: 6%;
+
+					h1{
+						span{
+						}
+					}
+					form{
+						font-size: 16px;
+						p{			
+						}
+						#milaia{
+						}
+						input{
+						}
+						label{
+							display: inline-block;
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#pirma{
+		height: 100%;
+		.wrapper{
+			h1{
+			}
+			div{
+				.palentele{
+					display: block;
+					width: 80%;
+					margin:auto;
+					margin-bottom: 4%;
+					h1{
+						span{
+						}
+					}
+					form{
+						font-size: 16px;
+						p{				
+						}
+						#milaib{
+							margin-bottom:30px;
+						}
+						input{
+						}
+						label{
+							line-height:0;
+							display: block;
+						}
+						.button{
+						}
+					}
+				}
+				.aalentele{
+					width: 80%;
+					margin-left: 10%;
+					margin-bottom: 6%;
+					h1{
+						span{
+						}
+					}
+					form{
+						font-size: 16px;
+						p{			
+						}
+						#milaic{
+							margin-bottom:30px;
+						}
+						input{
+						}
+						label{
+							line-height:0;
+							display: block;
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#antra{
+		.wrapper{
+			div{
+				h1{
+				}
+				p{
+				    strong{
+				    }
+				}
+				p:last-child{
+				}
+			}
+		}
+	}
+	#trecia{
+		.wrapper{
+			h1{
+			}
+			p{
+				width: 66%;
+				margin-left: 8%;
+			}
+		}
+	}
+	#ketvirta{
+		.wrapper{
+			h1{
+			}
+			p{
+			    strong{
+			    }
+			}
+			p:last-child{
+			}
+		}
+	}
+	#penkta{
+		.wrapper{
+			h1{
+			}
+			div{
+				p{
+				}
+				div{
+					a{
+						img[src="img/skype.png"]{
+						}
+					}
+					a{
+						img[src="img/1-facebook.png"]{
+						}
+					}
+				}
+			}
+			p{
+			}
+			div{
+				img[src="img/paypal_logo1.jpg"]{
+				}
+				img[src="img/payments_320.jpg"]{
+				}
+			}
+		}
+	}
+	footer{
+	}
+}
+@media only screen and(max-width: 680px){
+	header{
+		.hamburger{
+		}
+		.cross{
+		}
+		img{
+		}
+	}
+	nav{
+
+		a{
+			img{
+				display: none;
+			}
+		}
+
+		ul{
+			li{	
+				a{
+				}
+			}
+			.active{
+				display:block;
+			}
+			li:hover{
+			}
+		}
+	}
+	#nuline{
+		.wrapper{
+			h1{
+				font-size: 40px;
+			}
+			div{
+				.plentele{
+						
+					h1{
+						span{
+						}
+					}
+					form{
+						// font-size: 16px;
+						p{			
+						}
+						.p{
+							// margin-bottom: 5%;
+						}
+						#milai{
+							// margin-bottom:30px;
+						}
+						input{
+						}
+						label{
+							// line-height:0;
+							// display: block;
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						// font-size: 16px;
+						p{			
+						}
+						.p{
+							// margin-bottom: 5%;
+						}
+						#milaia{
+							// margin-bottom:30px;
+						}
+						input{
+						}
+						label{
+							// line-height:0;
+							// display: block;
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#pirma{
+		.wrapper{
+			h1{
+			}
+			div{
+				.palentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						font-size: 16px;
+						p{				
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.aalentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						font-size: 16px;
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#antra{
+		.wrapper{
+			div{
+				h1{
+				}
+				p{
+				    strong{
+				    }
+				}
+				p:last-child{
+				}
+			}
+		}
+	}
+	#trecia{
+		.wrapper{
+			h1{
+			}
+			p{
+				width: 72%;
+				margin-left: 10%;
+			}
+		}
+	}
+	#ketvirta{
+		.wrapper{
+			h1{
+			}
+			p{
+			    strong{
+			    }
+			}
+			p:last-child{
+			}
+		}
+	}
+	#penkta{
+		.wrapper{
+			h1{
+			}
+			div{
+				p{
+				}
+				div{
+					a{
+						img[src="img/skype.png"]{
+						}
+					}
+					a{
+						img[src="img/1-facebook.png"]{
+						}
+					}
+				}
+			}
+			p{
+			}
+			div{
+				img[src="img/paypal_logo1.jpg"]{
+				}
+				img[src="img/payments_320.jpg"]{
+				}
+			}
+		}
+	}
+	footer{
+	}
+}
+@media only screen and(max-width: 680px){
+	header{
+		.hamburger{
+		}
+		.cross{
+		}
+		img{
+		}
+	}
+	nav{
+
+		a{
+			img{
+			}
+		}
+
+		ul{
+			li{	
+				a{
+				}
+			}
+			.active{
+			}
+			li:hover{
+			}
+		}
+	}
+	#nuline{
+		.wrapper{
+			h1{
+			}
+			div{
+				.plentele{
+						
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						#milai{
+						}
+						input{
+						}
+						label{
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						#milaia{
+						}
+						input{
+						}
+						label{
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#pirma{
+		.wrapper{
+			h1{
+			}
+			div{
+				.palentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{				
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.aalentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#antra{
+		.wrapper{
+			div{
+				h1{
+				}
+				p{
+				    strong{
+				    }
+				}
+				p:last-child{
+				}
+			}
+		}
+	}
+	#trecia{
+		.wrapper{
+			h1{
+			}
+			p{
+				width: 74%;
+				margin-left: 10%;
+			}
+		}
+	}
+	#ketvirta{
+		.wrapper{
+			h1{
+			}
+			p{
+			    strong{
+			    }
+			}
+			p:last-child{
+			}
+		}
+	}
+	#penkta{
+		.wrapper{
+			h1{
+			}
+			div{
+				p{
+				}
+				div{
+					a{
+						img[src="img/skype.png"]{
+						}
+					}
+					a{
+						img[src="img/1-facebook.png"]{
+						}
+					}
+				}
+			}
+			p{
+			}
+			div{
+				img[src="img/paypal_logo1.jpg"]{
+				}
+				img[src="img/payments_320.jpg"]{
+				}
+			}
+		}
+	}
+	footer{
+	}
+}
+@media only screen and(max-width: 590px){
+	header{
+		.hamburger{
+		}
+		.cross{
+		}
+		img{
+		}
+	}
+	nav{
+
+		a{
+			img{
+			}
+		}
+
+		ul{
+			li{	
+				a{
+				}
+			}
+			.active{
+			}
+			li:hover{
+			}
+		}
+	}
+	#nuline{
+		.wrapper{
+			h1{
+			}
+			div{
+				.plentele{
+						
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						#milai{
+						}
+						input{
+						}
+						label{
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						#milaia{
+						}
+						input{
+						}
+						label{
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#pirma{
+		.wrapper{
+			h1{
+			}
+			div{
+				.palentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{				
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+				.aalentele{
+					h1{
+						span{
+						}
+					}
+					form{
+						p{			
+						}
+						input{
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#antra{
+		.wrapper{
+			div{
+				h1{
+				}
+				p{
+				    strong{
+				    }
+				}
+				p:last-child{
+				}
+			}
+		}
+	}
+	#trecia{
+		.wrapper{
+			h1{
+				margin-left: 30%;
+			}
+			p{
+				width: 74%;
+				margin-left: 14%;
+			}
+		}
+	}
+	#ketvirta{
+		.wrapper{
+			h1{
+			}
+			p{
+			    strong{
+			    }
+			}
+			p:last-child{
+			}
+		}
+	}
+	#penkta{
+		.wrapper{
+			h1{
+			}
+			div{
+				p{
+				}
+				div{
+					a{
+						img[src="img/skype.png"]{
+						}
+					}
+					a{
+						img[src="img/1-facebook.png"]{
+						}
+					}
+				}
+			}
+			p{
+			}
+			div{
+				img[src="img/paypal_logo1.jpg"]{
+				}
+				img[src="img/payments_320.jpg"]{
+				}
+			}
+		}
+	}
+	footer{
+	}
+}
+@media only screen and(max-width: 384px){
+	header{
+		.hamburger{
+		}
+		.cross{
+		}
+		img{
+		}
+	}
+	nav{
+
+		a{
+			img{
+				display: none;
+			}
+		}
+
+		ul{
+			li{		
+				a{
+				}
+			}
+			.active{
+				display:block;
+			}
+			li:hover{
+			}
+		}
+	}
+	#nuline{
+		height: 100%;
+		.wrapper{
+			h1{
+				font-size: 40px;
+			}
+			div{
+				.plentele{
+					display: block;
+					width: 80%;
+					margin:auto;
+					margin-bottom: 4%;					
+					h1{
+						span{
+						}
+					}
+					form{
+						font-size: 16px;
+						p{
+						font-size: 14px;		
+						}
+						.p{
+							margin-bottom: 13%;
+						}
+						#milai{
+							// margin-bottom:30px;
+						}
+						input{
+						}
+						label{
+							line-height:0;
+							display: block;
+						}
+						.button{
+						}
+					}
+				}
+				.alentele{
+					width: 80%;
+					margin-left: 10%;
+					margin-bottom: 6%;
+					h1{
+						span{
+						}
+					}
+					form{
+						font-size: 16px;
+						p{
+						font-size: 14px;		
+						}
+						.p{
+							margin-bottom: 13%;
+						}
+						#milaia{
+							// margin-bottom:30px;
+						}
+						input{
+						}
+						label{
+							line-height:0;
+							display: block;
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#pirma{
+		height: 100%;
+		.wrapper{
+			h1{
+			}
+			div{
+				.palentele{
+					display: block;
+					width: 80%;
+					margin:auto;
+					margin-bottom: 4%;
+					h1{
+						span{
+						}
+					}
+					form{
+						font-size: 16px;
+						p{
+						font-size: 14px;				
+						}
+						#milaib{
+							margin-bottom:30px;
+						}
+						input{
+						}
+						label{
+							line-height:0;
+							display: block;
+						}
+						.button{
+						}
+					}
+				}
+				.aalentele{
+					width: 80%;
+					margin-left: 10%;
+					margin-bottom: 6%;
+					h1{
+						span{
+						}
+					}
+					form{
+						font-size: 16px;
+						p{
+						font-size: 14px;			
+						}
+						#milaic{
+							margin-bottom:30px;
+						}
+						input{
+						}
+						label{
+							line-height:0;
+							display: block;
+						}
+						.button{
+						}
+					}
+				}
+			}
+		}
+	}
+	#antra{
+		.wrapper{
+			div{
+				h1{
+				}
+				p{
+				    strong{
+				    }
+				}
+				p:last-child{
+				}
+			}
+		}
+	}
+	#trecia{
+		.wrapper{
+			h1{
+				margin-left: 21%;
+				padding-top: 40%; //jei desiu kita logotipa
+			}
+			p{
+				width: 74%;
+				margin-left: 20%;
+			}
+		}
+	}
+	#ketvirta{
+		.wrapper{
+			h1{
+			}
+			p{
+			    strong{
+			    }
+			}
+			p:last-child{
+			}
+		}
+	}
+	#penkta{
+		.wrapper{
+			h1{
+			}
+			div{
+				p{
+				}
+				div{
+					a{
+						img[src="img/skype.png"]{
+						}
+					}
+					a{
+						img[src="img/1-facebook.png"]{
+						}
+					}
+				}
+			}
+			p{
+			}
+			div{
+				img[src="img/paypal_logo1.jpg"]{
+					height: 180px;
+				}
+				img[src="img/payments_320.jpg"]{
+					height: 180px;
+				}
+			}
+		}
+	}
+	footer{
+	}
+}
+
+
