@@ -17,10 +17,10 @@
 	<header>
 		<button class="hamburger">&#9776;</button>
   		<button class="cross">&#735;</button>
-  			 <href="#nuline"><img src="img/logo3.png">
+  		<a href="#nuline"><img  src="img/logo3.png"></a>
 	</header>
 	<nav>
-		<a><img src="img/logo3.png"></a>
+		<a href="#nuline"><img  src="img/logo3.png"></a>
 		<ul>
 			<li><a href="#nuline">BUY YOUR GOLD</a></li>
 			<li><a href="#pirma">SELL YOUR GOLD</a></li>

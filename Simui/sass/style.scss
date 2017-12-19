@@ -83,6 +83,9 @@ header{
 		position: absolute;
 		margin-left: 30px;
 	}
+	img:hover{
+		width: 135px;
+	}
 }		
 nav{
 	background:rgba(0,0,0,0.8);
@@ -102,8 +105,8 @@ nav{
 		}
 	}
 	ul{
-		width: 82%;
-		// margin-right: 7%;
+		// width: 82%;
+		margin-right: 2%;
 		float: right;
 		li{
 			display: inline-block;
@@ -554,17 +557,16 @@ nav{
 		div{
 			padding-bottom:3%;
 			img[src="img/paypal_logo1.jpg"]{
-				width: 40%;
-				height: 200px;
-				margin-left: 9%;
+				width: 46%;
+				margin-left: 2%;
 				margin-right: 3%;
+				margin-bottom: 2%;
 
 				display: inline-block;
 
 			}
 			img[src="img/payments_320.jpg"]{
-				width: 40%; 
-				height: 200px;
+				width: 46%; 
 			}
 		}
 	}
@@ -595,6 +597,7 @@ footer{
 			}
 		}
 		ul{
+			margin-right: 5%;
 			li{	
 				a{
 				}
@@ -1098,12 +1101,14 @@ footer{
 	nav{
 		a{
 			img{
+				margin-right: 0%;
 			}
 		}
 		ul{
+			// margin-right: 5%;
 			li{	
 				a{
-					padding: 20px 43px;
+					padding: 20px 45px;
 				}
 			}
 			.active{
@@ -1257,6 +1262,36 @@ footer{
 	footer{
 	}
 }
+@media only screen and(max-width: 1490px){
+	header{
+		.hamburger{		
+		}
+		.cross{	
+		}
+		img{		
+		}
+	}
+	nav{
+		a{
+			img{
+				margin-right: 0%;
+			}
+		}
+		ul{
+			// margin-right: 5%;
+			li{	
+				a{
+					padding: 20px 40px;
+				}
+			}
+			.active{
+				display:block;
+			}
+			li:hover{
+			}
+		}
+	}
+}		
 @media only screen and(max-width: 1425px){
 	header{
 		.hamburger{		
@@ -1638,9 +1673,10 @@ footer{
 			}
 		}
 		ul{
+			margin-right: 5%;
 			li{	
 				a{
-					padding:20px 25px;
+					padding:20px 26px;
 				}
 			}
 			.active{
@@ -1805,6 +1841,7 @@ footer{
 			}
 		}
 		ul{
+			margin-right: 3%;
 			li{	
 				a{
 				}
@@ -1971,7 +2008,7 @@ footer{
 				li{	
 					a{
 						padding:20px 18px;
-						font-size: 15px;
+						font-size: 18px;
 				}
 				.active{
 					display:block;
@@ -2133,12 +2170,13 @@ footer{
 			img{
 				width: 150px;
 				margin-top:12px;
-				margin-left: 2%;
+				margin-left: 0%;
 			}
 		}
-		ul{
+		ul{margin-right:0px;
 			li{	
 				a{
+					padding:20px 15px;
 				}
 			}
 			.active{
@@ -2304,7 +2342,6 @@ footer{
 		border-bottom:none;
 		display: none;
 		margin-top: 62px;
-
 		a{
 			img{
 				display: none;
@@ -2315,11 +2352,13 @@ footer{
 			// display:inherit;
 			width: 100%;
 			margin-right: 0;
-			background-color:black;
+			background-color: black;
+			
+
 			li{	
 				display: block;	
 				text-align: center;
-				border-bottom: 1px solid white;	
+				border-bottom: 1px solid  #A66312;
 				a{
 					font-size: 20px;
 				}
@@ -3671,14 +3710,10 @@ footer{
 			}
 			div{
 				img[src="img/paypal_logo1.jpg"]{
-					height: 200px;
-					margin-left: 9%;
-					width: 40%;
+					
 				}
 				img[src="img/payments_320.jpg"]{
-					// height: 180px;
-					height: 200px;
-					width: 40%;
+					
 				}
 			}
 		}

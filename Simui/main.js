@@ -26,13 +26,31 @@ $( ".cross" ).hide();
             $( "nav" ).slideToggle( "slow", function() {
                 $( ".hamburger" ).show();
                 $( ".cross" ).hide();
+
             });
         });
     }
-
-    //  var mql = window.matchMedia("screen and (max-width: 900px)")
    
+var para = document.querySelector('li');
 
+var mql = window.matchMedia('(max-width: 900px)');
+
+function screenTest(e) {
+  if (e.matches) {
+    $( "li" ).click(function() {
+            $( "nav" ).slideToggle( "slow", function() {
+                $( ".hamburger" ).show();
+                $( ".cross" ).hide();
+            });
+        });
+  } else {
+    location.reload();
+    /* the viewport is more than than 600 pixels wide */
+  }
+}
+
+mql.addListener(screenTest);
+ 
 });
 
 
