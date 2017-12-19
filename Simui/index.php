@@ -32,7 +32,7 @@
 	</nav>
 	<section id="nuline" name="BUY GOLD">
 		<div class="wrapper">
-			<h1>BUY YOUR RUNESCAPE GOLD</h1>
+			<h1>BUY RUNESCAPE GOLD</h1>
 			<div>
 				<div class="plentele">
 					<h1>Buy Runescape<br><span>OSRS</span> Gold in Milions</h1>
@@ -55,14 +55,14 @@
 					<form>
 						<p>Amount in Millions (1 for : 1 Milion)</p>
 						<label for=""></label>
-						<input type="text" id="milaia" placeholder="1 M"><br>
+						<input type="number" id="milaia" placeholder="1 M"><br>
 						<p class="p">Minimum amount 10 Millions</p>
 						<label for="">The total price €:</label>
-						<input type="text" id="euraia" placeholder="€"><br>
+						<input type="number" id="euraia" placeholder="€"><br>
 						<label for="">The total price $:</label>
-						<input type="text" id="USDa" placeholder="$"><br>
+						<input type="number" id="USDa" placeholder="$"><br>
 						<label for="">The total price £:</label>
-						<input type="text" id="GBPa" placeholder="£"><br>
+						<input type="number" id="GBPa" placeholder="£"><br>
 						<a href="https://www.facebook.com/simas.ivanovas" class="button" target="_blank">BUY NOW</a>
 					</form>
 				</div>
@@ -79,13 +79,14 @@
 					<form>
 						<p>Amount in Millions (1 for : 1 Milion)</p>
 						<label for=""></label>
-						<input type="text" id="milaib" placeholder="1 M"><br>
+						<input type="number" id="milaib" placeholder="1 M"><br>
+						<p class="p">Minimum amount 50 Millions</p>
 						<label for="">The total price €:</label>
-						<input type="text" id="euraib" placeholder="€"><br>
+						<input type="number" id="euraib" placeholder="€"><br>
 						<label for="">The total price $:</label>
-						<input type="text" id="USDb" placeholder="$"><br>
+						<input type="number" id="USDb" placeholder="$"><br>
 						<label for="">The total price £:</label>
-						<input type="text" id="GBPb" placeholder="£"><br>
+						<input type="number" id="GBPb" placeholder="£"><br>
 						<a href="https://www.facebook.com/simas.ivanovas" class="button" target="_blank">BUY NOW</a>
 					</form>
 				</div>
@@ -94,13 +95,14 @@
 					<form>
 						<p>Amount in Millions (1 for : 1 Milion)</p>
 						<label for=""></label>
-						<input type="text" id="milaic" placeholder="1 M"><br>
+						<input type="number" id="milaic" placeholder="1 M"><br>
+						<p class="p">Minimum amount 50 Millions</p>
 						<label for="">The total price €:</label>
-						<input type="text" id="euraic" placeholder="€"><br>
+						<input type="number" id="euraic" placeholder="€"><br>
 						<label for="">The total price $:</label>
-						<input type="text" id="USDc" placeholder="$"><br>
+						<input type="number" id="USDc" placeholder="$"><br>
 						<label for="">The total price £:</label>
-						<input type="text" id="GBPc" placeholder="£"><br>
+						<input type="number" id="GBPc" placeholder="£"><br>
 						<a href="https://www.facebook.com/simas.ivanovas" class="button" target="_blank">BUY NOW</a>
 					</form>
 				</div>

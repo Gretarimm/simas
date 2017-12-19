@@ -20,15 +20,6 @@ $( ".cross" ).hide();
 		});
 	});
 
-
-//    if($("nav").is(":visible")) {
-//             $( 'li' ).click( function() {
-//   $( 'nav').slideToggle('slow');
-//   $( ".hamburger" ).show();
-//   $( ".cross" ).hide();
-// });
-   // }
-   // 
  var width = $(window).width();
     if (width < 900) {
         $( "li" ).click(function() {
@@ -40,16 +31,10 @@ $( ".cross" ).hide();
     }
 
     //  var mql = window.matchMedia("screen and (max-width: 900px)")
-    // if (mql.maches){
-    //     console.log("The condition " + mql.media + " has been met");
-    //     $( "li" ).click(function() {
-    //         $( "nav" ).slideToggle( "slow", function() {
-    //             $( ".hamburger" ).show();
-    //             $( ".cross" ).hide();
-    //         });
-    //     });
-    // }
+   
+
 });
+
 
 
 // _____________________________________
@@ -163,27 +148,27 @@ $('#GBPa').on('keyup', function(){
 
 //________kita sekcija______#pirma 1lentele____________
 function vienasMilijonasEuraib(pinigai) {
-    var koef = 0.16;
+    var koef = 0.66
     return pinigai*koef;
 }
 function vienasMilijonasUSDb(pinigai) {
-    var koefa = 0.24;
+    var koefa = 0.70;
     return pinigai*koefa;
 }
 function vienasMilijonasGBPb(pinigai) {
-    var koefb = 0.13;
+    var koefb = 0.62;
     return pinigai*koefb;
 }
 function euraisGaunasib(pinigai) {
-    var koef = 0.16;
+    var koef = 0.66;
     return pinigai/koef;
 }
 function USDb(pinigai) {
-    var koefa = 0.24;
+    var koefa = 0.70;
     return pinigai/koefa;
 }
 function GBPb(pinigai) {
-    var koefb = 0.13;
+    var koefb = 0.62;
     return pinigai/koefb;
 }
 $('#milaib').on('keyup', function(){
@@ -214,29 +199,29 @@ $('#GBPb').on('keyup', function(){
     var atsakymasEuraib = GBPa(reiksmeInputb);
     var EuruInputb =$('#milaib').val(atsakymasEuraib.toFixed(2));
 });
-//____________________________________________
+//_________________antra___________________________
 function vienasMilijonasEuraic(pinigai) {
-    var koef = 0.16;
+    var koef = 0.12;
     return pinigai*koef;
 }
 function vienasMilijonasUSDc(pinigai) {
-    var koefa = 0.24;
+    var koefa = 0.15;
     return pinigai*koefa;
 }
 function vienasMilijonasGBPc(pinigai) {
-    var koefb = 0.13;
+    var koefb = 0.10;
     return pinigai*koefb;
 }
 function euraisGaunasic(pinigai) {
-    var koef = 0.16;
+    var koef = 0.12;
     return pinigai/koef;
 }
 function USDc(pinigai) {
-    var koefa = 0.24;
+    var koefa = 0.15;
     return pinigai/koefa;
 }
 function GBPc(pinigai) {
-    var koefb = 0.13;
+    var koefb = 0.10;
     return pinigai/koefb;
 }
 $('#milaic').on('keyup', function(){

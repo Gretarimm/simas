@@ -40,9 +40,10 @@ font-family:$font;
 header{
 	width:100%; 
 	background:black; 
-	height:100px; 
+	height:60px; 
 	display:none;
 	position:fixed;
+	z-index:1;
 	border-bottom:2px solid gold;
 	
 	.hamburger{
@@ -51,7 +52,7 @@ header{
 		top:0;
 		right:0;
 		line-height:45px;
-		margin:50px 20px 0px 20px;
+		margin:10px 20px 0px 20px;
 		color:white;
 		border:0;
 		font-size:2em;
@@ -66,7 +67,7 @@ header{
 		position:absolute;
 		top:0px;
 		right:0;
-		margin:50px 20px 0px 20px;
+		margin:10px 20px 0px 20px;
 		color:white;
 		border:0;
 		font-size:4em;
@@ -78,15 +79,16 @@ header{
 	}
 	img{
 		display: none;
-		width: 100px;
+		width: 120px;
 		position: absolute;
+		margin-left: 30px;
 	}
 }		
 nav{
 	background:rgba(0,0,0,0.8);
 	width: 100%;
 	border-bottom: 2px solid gold;
-	display: block;
+	// display: block;
 	position:fixed;
 	a{
 		img{
@@ -127,7 +129,7 @@ nav{
 	background-size: cover;
 	height:100%;
 	background-repeat:no-repeat;
-	font-weight:bold;
+	// font-weight:bold;
 	.wrapper{
 		max-width: 1200px;
 		margin:auto;
@@ -136,6 +138,7 @@ nav{
 			font-size: 45px;
 			text-align: center;
 			padding-top:17%;
+			font-weight:bold;
 		}
 		div{
 			width: 100%;
@@ -159,6 +162,7 @@ nav{
 					border-top-right-radius: 18px;
 					margin-left: 0.8px;
 					padding:16px 0px;
+					font-weight:bold;
 					span{
 						font-weight: bold;
 						color: gold;
@@ -213,6 +217,7 @@ nav{
 					border-top-right-radius: 18px;
 					margin-right: 0.8px;
 					padding:16px 0px;
+					font-weight:bold;
 					span{
 						font-weight: bold;
 						color: gold;
@@ -305,6 +310,14 @@ nav{
 					line-height: 0;
 					margin-top: 5%;					
 					}
+					.p{
+						text-align: center;
+						color: red;
+						font-size: 14px;
+						margin: 0;
+						margin-bottom: 5%;
+						font-family: monospace;
+					}
 					input{
 						padding:7px;
 						border-radius: 5px;
@@ -350,6 +363,14 @@ nav{
 					p{	
 					line-height: 0;
 					margin-top: 5%;					
+					}
+					.p{
+						text-align: center;
+						color: red;
+						font-size: 14px;
+						margin: 0;
+						margin-bottom: 5%;
+						font-family: monospace;
 					}
 					input{
 						padding:7px;
@@ -533,15 +554,16 @@ nav{
 		div{
 			padding-bottom:3%;
 			img[src="img/paypal_logo1.jpg"]{
-				width: 30%;
+				width: 40%;
 				height: 200px;
-				margin-left: 18%;
+				margin-left: 9%;
 				margin-right: 3%;
+
 				display: inline-block;
 
 			}
 			img[src="img/payments_320.jpg"]{
-				width: 28%; 
+				width: 40%; 
 				height: 200px;
 			}
 		}
@@ -2126,7 +2148,7 @@ footer{
 			}
 		}
 	}
-		#nuline{
+	#nuline{
 		.wrapper{
 			h1{
 			}
@@ -2281,7 +2303,7 @@ footer{
 		display: block;
 		border-bottom:none;
 		display: none;
-		margin-top: 100px;
+		margin-top: 62px;
 
 		a{
 			img{
@@ -2290,13 +2312,16 @@ footer{
 		}
 
 		ul{
+			// display:inherit;
 			width: 100%;
 			margin-right: 0;
+			background-color:black;
 			li{	
 				display: block;	
 				text-align: center;
 				border-bottom: 1px solid white;	
 				a{
+					font-size: 20px;
 				}
 			}
 			.active{
@@ -2310,7 +2335,7 @@ footer{
 		.wrapper{
 			h1{
 				font-size: 40px;
-				// padding-top: 40%;
+				padding-top: 20%;
 			}
 			div{
 				.plentele{
@@ -2351,7 +2376,7 @@ footer{
 		.wrapper{
 			h1{
 				font-size: 40px;
-				// padding-top: 40%;
+				padding-top: 20%;
 			}
 			div{
 				.palentele{
@@ -2392,7 +2417,7 @@ footer{
 				div{
 					h1{
 						font-size: 40px;
-						// padding-top: 40%;
+						padding-top: 20%;
 					}
 					p{
 					    strong{
@@ -2408,6 +2433,7 @@ footer{
 				h1{
 					font-size: 40px;
 					margin-left: 26%;
+					padding-top: 20%;
 				}
 				p{
 				}
@@ -2417,7 +2443,7 @@ footer{
 			.wrapper{
 				h1{
 					font-size: 40px;
-					// padding-top: 40%;
+					padding-top: 20%;
 				}
 				p{
 				    strong{
@@ -2431,7 +2457,7 @@ footer{
 		.wrapper{
 			h1{
 				font-size: 40px;
-				// padding-top: 40%;
+				padding-top: 20%;
 			}
 			div{
 				p{
@@ -2563,6 +2589,9 @@ footer{
 						font-size: 16px;
 						p{				
 						}
+						.p{
+							margin-bottom: 5%;
+						}
 						input{
 						}
 						.button{
@@ -2577,6 +2606,9 @@ footer{
 					form{
 						font-size: 16px;
 						p{			
+						}
+						.p{
+							margin-bottom: 5%;
 						}
 						input{
 						}
@@ -2761,7 +2793,7 @@ footer{
 						p{				
 						}
 						#milaib{
-							margin-bottom:30px;
+							// margin-bottom:30px;
 						}
 						input{
 						}
@@ -2786,7 +2818,7 @@ footer{
 						p{			
 						}
 						#milaic{
-							margin-bottom:30px;
+							// margin-bottom:30px;
 						}
 						input{
 						}
@@ -2968,7 +3000,7 @@ footer{
 						}
 					}
 					form{
-						font-size: 16px;
+						// font-size: 16px;
 						p{				
 						}
 						input{
@@ -2983,7 +3015,7 @@ footer{
 						}
 					}
 					form{
-						font-size: 16px;
+						// font-size: 16px;
 						p{			
 						}
 						input{
@@ -3459,9 +3491,9 @@ footer{
 						}
 					}
 					form{
-						font-size: 16px;
+							font-size: 16px;
 						p{
-						font-size: 14px;		
+							font-size: 14px;		
 						}
 						.p{
 							margin-bottom: 13%;
@@ -3531,8 +3563,11 @@ footer{
 						p{
 						font-size: 14px;				
 						}
+						.p{
+							margin-bottom: 13%;
+						}
 						#milaib{
-							margin-bottom:30px;
+							// margin-bottom:30px;
 						}
 						input{
 						}
@@ -3557,8 +3592,11 @@ footer{
 						p{
 						font-size: 14px;			
 						}
+						.p{
+							margin-bottom: 13%;
+						}
 						#milaic{
-							margin-bottom:30px;
+							// margin-bottom:30px;
 						}
 						input{
 						}
@@ -3591,7 +3629,7 @@ footer{
 		.wrapper{
 			h1{
 				margin-left: 21%;
-				padding-top: 40%; //jei desiu kita logotipa
+				// padding-top: 40%; //jei desiu kita logotipa
 			}
 			p{
 				width: 74%;
@@ -3633,10 +3671,14 @@ footer{
 			}
 			div{
 				img[src="img/paypal_logo1.jpg"]{
-					height: 180px;
+					height: 200px;
+					margin-left: 9%;
+					width: 40%;
 				}
 				img[src="img/payments_320.jpg"]{
-					height: 180px;
+					// height: 180px;
+					height: 200px;
+					width: 40%;
 				}
 			}
 		}
