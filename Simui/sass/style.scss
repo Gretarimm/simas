@@ -91,48 +91,44 @@ nav{
 	background:rgba(0,0,0,0.8);
 	width: 100%;
 	border-bottom: 2px solid gold;
-	// display: block;
 	position:fixed;
 	a{
 		img{
-			width: 200px;
-			z-index: 1;
-			position: absolute;
-			margin-left: 3%;
+		width: 200px;
+		z-index: 1;
+		position: absolute;
+		margin-left: 2%;
 		}
 		img:hover{
 			width: 220px;
 		}
 	}
 	ul{
-		// width: 82%;
-		margin-right: 2%;
 		float: right;
+		margin-right:3%; 
 		li{
 			display: inline-block;
 			padding: 20px 0px;
-
 			a{
 				text-decoration: none;
-				padding: 20px 70px; 
+				padding: 40px 20px; 
 				color: white;
 				font-weight: bold;
-				font-size: 20px;
+				font-size: 1.2em;
 			}
 			a:hover{
 			}
 		}
 		li:hover{
-				background :#505160;
+			background :#505160;
 		}
 	}
-}
+}	
 #nuline{
 	background-image: url("../img/1.2.png");
 	background-size: cover;
 	height:100%;
 	background-repeat:no-repeat;
-	// font-weight:bold;
 	.wrapper{
 		max-width: 1200px;
 		margin:auto;
@@ -147,6 +143,7 @@ nav{
 			width: 100%;
 			padding-top: 10%;
 			margin: 0 auto;
+			padding-bottom: 3%;
 			.plentele{
 				display: inline-block;
 				width: 40%;
@@ -281,6 +278,7 @@ nav{
 			width: 100%;
 			padding-top: 10%;
 			margin: 0 auto;
+			padding-bottom: 3%;
 			.palentele{
 				display: inline-block;
 				width: 40%;
@@ -442,13 +440,11 @@ nav{
 	background-repeat:no-repeat;
 	height:100%;
 	.wrapper{
-		// max-width: 1200px;
 		
 		h1{
 			color: black;
 			font-size: 45px;
 			margin-left: 20%;
-			// text-align: center -50%;
 			padding-top:5%;
 			font-weight:bold;
 			padding-bottom: 3%;
@@ -457,7 +453,6 @@ nav{
 			font-size: 20px;
 			color: black;
 			text-indent:30px;
-			// padding-bottom: 20%;
 			font-weight: bold;
 			width: 40%;
 			margin-left:6%;
@@ -468,6 +463,98 @@ nav{
 	}
 }
 #ketvirta{
+	background-image: url("../img/4.jpg");
+	background-size: 100%;
+	background-repeat:y-repeat;
+	height:100%;
+	.wrapper{
+		max-width: 1200px;
+		margin:auto;
+		padding-bottom:7%;
+		h1{
+			color: white;
+			font-size: 45px;
+			text-align: center;
+			padding-top:8%;
+			font-weight:bold;
+			padding-bottom: 3%;
+		}
+		form{
+			table{
+				margin: 0 auto;
+				tr{
+					td{
+						font-weight: bold;
+						font-size: 20px;
+						color: white;
+						.aname{
+							padding: 5px 60px 5px 5px;
+							font-size: 16px;
+							border:1.5px solid gold;
+							background-image: url("../img/8.jpg");
+						}
+					}
+				}
+				textarea{
+					width: 100%;
+					// height: 80px;
+					box-sizing: border-box;
+					text-indent:10px;
+					font-size: 16px;
+					resize: none;
+					border:1.5px solid gold;
+					background-image: url("../img/8.jpg");				
+				}
+				tr{
+					.asubmit{
+						background-image:url("../img/9.jpg");
+						font-size: 15px;
+						font-weight: bold;
+						color: black;
+						padding:2% 20%;
+						text-decoration: none;
+						border:none;
+						border-radius:5px;
+						margin: auto;
+					    display: block;
+					    margin-top: 2%;
+					}
+				}
+			}
+		}
+		.comment-box{
+			padding: 10px;
+			border-radius: 10px;
+			margin-top: 1%;
+			border: 1.5px solid gold;
+			background-repeat: no-repeat;
+    		background-size: cover;
+   			overflow: hidden;
+			background-image: url("../img/8.jpg");
+			p{
+				color:#282828;
+				font-size: 14px;
+				font-family: arial;
+				line-height: 16px;
+			}
+		}
+		.more{
+			font-size: 18px;
+		    font-weight: bold;
+		    color: black;
+		    background-image:url("../img/9.jpg");
+		    padding: 15px;
+		    text-decoration: none;
+		    border-radius: 5px;
+		    margin: auto;
+		    display: block;
+		    margin-top: 4%;
+		    width: 30%;
+		    text-align: center;
+		}
+	}
+}
+#penkta{
 	background-image: url("../img/5.jpg");
 	background-size: cover;
 	background-attachment: fixed;
@@ -504,7 +591,7 @@ nav{
 		}
 	}
 }
-#penkta{
+#sesta{
 	background-image: url("../img/006.jpg");
 	height:100%;
 	background-size: cover;
@@ -556,17 +643,19 @@ nav{
 		}
 		div{
 			padding-bottom:3%;
+			margin: 0 auto;
 			img[src="img/paypal_logo1.jpg"]{
-				width: 46%;
-				margin-left: 2%;
+				margin-left: 8%;
+				width: 40%;
 				margin-right: 3%;
 				margin-bottom: 2%;
-
 				display: inline-block;
-
 			}
 			img[src="img/payments_320.jpg"]{
-				width: 46%; 
+				margin-left: 2%;
+   				margin-right: 3%;
+    			margin-bottom: 2%;
+   				width: 34%;
 			}
 		}
 	}
@@ -597,7 +686,7 @@ footer{
 			}
 		}
 		ul{
-			margin-right: 5%;
+			// margin-right: 5%;
 			li{	
 				a{
 				}
@@ -770,7 +859,7 @@ footer{
 		ul{
 			li{	
 				a{
-					padding: 20px 60px;
+					// padding: 20px 60px;
 				}
 			}
 			.active{
@@ -936,7 +1025,7 @@ footer{
 		ul{
 			li{	
 				a{
-					padding: 20px 50px;
+					// padding: 20px 50px;
 				}
 			}
 			.active{
@@ -1101,14 +1190,14 @@ footer{
 	nav{
 		a{
 			img{
-				margin-right: 0%;
+				// margin-right: 0%;
 			}
 		}
 		ul{
 			// margin-right: 5%;
 			li{	
 				a{
-					padding: 20px 45px;
+					// padding: 20px 45px;
 				}
 			}
 			.active{
@@ -1119,6 +1208,7 @@ footer{
 		}
 	}	
 	#nuline{
+		height: 100%;
 		.wrapper{
 			h1{
 			padding-top:9%;
@@ -1157,6 +1247,7 @@ footer{
 		}
 	}
 	#pirma{
+		height: 100%;
 		.wrapper{
 			h1{
 				padding-top:9%;
@@ -1274,14 +1365,14 @@ footer{
 	nav{
 		a{
 			img{
-				margin-right: 0%;
+				// margin-right: 0%;
 			}
 		}
 		ul{
 			// margin-right: 5%;
 			li{	
 				a{
-					padding: 20px 40px;
+					// padding: 20px 40px;
 				}
 			}
 			.active{
@@ -1309,8 +1400,8 @@ footer{
 		ul{
 			li{	
 				a{
-					padding: 20px 45px;
-					font-size: 18px;
+					// padding: 20px 45px;
+					// font-size: 1.5em;
 				}
 			}
 			.active{
@@ -1481,7 +1572,7 @@ footer{
 		ul{
 			li{	
 				a{
-					padding:20px 35px;
+					// padding:20px 35px;
 				}
 			}
 			.active{
@@ -1504,13 +1595,14 @@ footer{
 	nav{
 		a{
 			img{
-				width: 170px;
-				margin-top:6px;
+				// width: 170px;
+				// margin-top:6px;
 			}
 		}
 		ul{
 			li{	
 				a{
+					font-size: 1.1em;
 				}
 			}
 			.active{
@@ -1670,13 +1762,15 @@ footer{
 	nav{
 		a{
 			img{
+				width: 180px;
+				margin-top: 5px;
 			}
 		}
 		ul{
-			margin-right: 5%;
+			// margin-right: 5%;
 			li{	
 				a{
-					padding:20px 26px;
+					// padding:20px 26px;
 				}
 			}
 			.active{
@@ -1841,7 +1935,7 @@ footer{
 			}
 		}
 		ul{
-			margin-right: 3%;
+			// margin-right: 3%;
 			li{	
 				a{
 				}
@@ -1990,6 +2084,36 @@ footer{
 	footer{
 	}	
 }
+@media only screen and(max-width: 1180px){
+	header{
+		.hamburger{		
+		}
+		.cross{	
+		}
+		img{		
+		}
+	}
+	nav{
+		a{
+			img{
+				width: 160px;
+				margin-top:7px; 
+			}
+		}
+		ul{
+			li{	
+				a{
+					font-size: 0.9em;
+				}
+			}
+			.active{
+				display:block;
+			}
+				li:hover{
+			}
+		}	
+	}
+}
 @media only screen and(max-width: 1090px){
 	header{
 		.hamburger{		
@@ -2007,8 +2131,9 @@ footer{
 			ul{
 				li{	
 					a{
-						padding:20px 18px;
-						font-size: 18px;
+						// padding:20px 18px;
+						// font-size: 18px;
+					}
 				}
 				.active{
 					display:block;
@@ -2054,107 +2179,36 @@ footer{
 				}
 			}
 		}
-		#pirma{
-			.wrapper{
-				h1{
-				}
-				div{
-					.plentele{
-						h1{
-							span{
-							}
-						}
-						form{
-							p{				
-							}
-							input{
-							}
-							.button{
-							}
-						}
-					}
-					.alentele{
-						h1{
-							span{
-							}
-						}
-						form{
-							p{			
-							}
-							input{
-							}
-							.button{
-							}
-						}
-					}
-				}
-			}
+}
+@media only screen and(max-width: 1036px){
+	header{
+		.hamburger{		
 		}
-		#antra{
-			.wrapper{
-				div{
-					h1{
-					}
-					p{
-					    strong{
-					    }
-					}
-					p:last-child{
-					}
-				}
-			}
+		.cross{	
 		}
-		#trecia{
-			.wrapper{
-				h1{
-				}
-				p{
-				}
-			}
-		}
-		#ketvirta{
-			.wrapper{
-				h1{
-				}
-				p{
-				    strong{
-				    }
-				}
-				p:last-child{
-				}
-			}
-		}
-		#penkta{
-			.wrapper{
-				h1{
-				}
-				div{
-					p{
-					}
-					div{
-						a{
-							img[src="img/skype.png"]{
-							}
-						}
-						a{
-							img[src="img/1-facebook.png"]{
-							}
-						}
-					}
-				}
-				p{
-				}
-				div{
-					img[src="img/paypal_logo1.jpg"]{
-					}
-					img[src="img/payments_320.jpg"]{
-					}
-				}
-			}
+		img{		
 		}
 	}
-	footer{
-	}	
+	nav{
+		a{
+			img{
+				width: 160px;
+				margin-top:7px; 
+			}
+		}
+		ul{
+			li{	
+				a{
+					font-size: 0.8em;
+				}
+			}
+			.active{
+				display:block;
+			}
+				li:hover{
+			}
+		}	
+	}
 }
 @media only screen and(max-width: 990px){
 	header{
@@ -2176,7 +2230,7 @@ footer{
 		ul{margin-right:0px;
 			li{	
 				a{
-					padding:20px 15px;
+					// padding:20px 15px;
 				}
 			}
 			.active{
@@ -2277,7 +2331,7 @@ footer{
 			h1{
 			}
 			p{
-				width: 140vh;
+				width: 59%;
 			}
 		}
 	}
@@ -2475,6 +2529,7 @@ footer{
 					padding-top: 20%;
 				}
 				p{
+					// width: 35%;
 				}
 			}
 	}
@@ -3721,5 +3776,6 @@ footer{
 	footer{
 	}
 }
+b { font-weight: bold; }
 
 

@@ -4,6 +4,13 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
 	<script
     src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
@@ -11,6 +18,7 @@
 	<title>Document</title>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	
 
 </head>
 <body>
@@ -21,14 +29,15 @@
 	</header>
 	<nav>
 		<a href="#nuline"><img  src="img/logo3.png"></a>
-		<ul>
-			<li><a href="#nuline">BUY YOUR GOLD</a></li>
-			<li><a href="#pirma">SELL YOUR GOLD</a></li>
-			<li><a href="#antra">FAQ</a></li>
-			<li><a href="#trecia">ABOUT ME</a></li>
-			<li><a href="#ketvirta">TERMS</a></li>
-			<li><a href="#penkta">CONTACT</a></li>
-		</ul>
+			<ul>
+				<li><a href="#nuline">BUY YOUR GOLD</a></li>
+				<li><a href="#pirma">SELL YOUR GOLD</a></li>
+				<li><a href="#antra">FAQ</a></li>
+				<li><a href="#trecia">ABOUT ME</a></li>
+				<li><a href="#ketvirta">COMMENT</a></li>
+				<li><a href="#penkta">TERMS</a></li>
+				<li><a href="#sesta">CONTACT</a></li>
+			</ul>
 	</nav>
 	<section id="nuline" name="BUY GOLD">
 		<div class="wrapper">
@@ -164,7 +173,26 @@
 				</p>
 		</div>
 	</section>
-	<section id="ketvirta" name="TERMS">
+	<section id="ketvirta" name="Zmoniu_comentarai">
+		<div class="wrapper">
+			<h1>Comments</h1>
+			<form action="http://localhost/Projektai1/Simui/post.php" method="POST">
+				<table>
+					<tr><td>Name: <br><input class="aname" type="text" name="name" required /></td></tr>
+					<tr><td colspan="2">Comment: </td></tr>
+					<tr><td colspan="5"><textarea rows="10" cols="30" name="comment" required></textarea></td></tr>
+					<tr><td colspan="2"><input class="asubmit" type="submit" name="submit" value="Comment"></td></tr>
+				</table>			
+			</form>
+
+<?php
+ require("db.php");
+ require("block.php");
+ ?>
+			<a href="comment.php" class="more" target="_blank">More Comments</a>
+		</div>	
+	</section>
+	<section id="penkta" name="TERMS">
 		<div class="wrapper">
 			<h1>TERMS</h1>
 			<div>
@@ -175,7 +203,7 @@
 			
 		</div>
 	</section>
-	<section id="penkta" name="CONTACT">
+	<section id="sesta" name="CONTACT">
 		<div class="wrapper">
 			<h1>CONTACT</h1>
 			<div>

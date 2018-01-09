@@ -270,3 +270,5 @@ $('#GBPc').on('keyup', function(){
     var atsakymasEuraic = GBPa(reiksmeInputc);
     var EuruInputc =$('#milaic').val(atsakymasEuraic.toFixed(2));
 });
+
+// _________comentaru laukai, kad nebutu tusti___________
