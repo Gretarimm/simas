@@ -31,38 +31,37 @@
 	<nav>
 		<a href="#nuline"><img  src="img/logo3.png"></a>
 		<ul>
-			<li><a href="http://localhost:3002/Projektai1/Simui/index.php#nuline">BUY YOUR GOLD</a></li>
+			<li><a href="http://localhost:3002/Projektai1/Simui/index.php#nuline">BUY GOLD</a></li>
 			<li><a href="http://localhost:3002/Projektai1/Simui/index.php#pirma">SELL YOUR GOLD</a></li>
 			<li><a href="http://localhost:3002/Projektai1/Simui/index.php#antra">FAQ</a></li>
 			<li><a href="http://localhost:3002/Projektai1/Simui/index.php#trecia">ABOUT ME</a></li>
-			<li><a href="http://localhost:3002/Projektai1/Simui/index.php#ketvirta">COMMENT</a></li>
-			<li><a href="http://localhost:3002/Projektai1/Simui/index.php#penkta">TERMS</a></li>
-			<li><a href="http://localhost:3002/Projektai1/Simui/index.php#sesta">CONTACT</a></li>
+			<li><a href="http://localhost:3002/Projektai1/Simui/index.php#ketvirta">COMMENTS</a></li>
+			<li><a href="http://localhost:3002/Projektai1/Simui/index.php#penkta">CONTACT</a></li>
 		</ul>
 	</nav>
 <section id="ketvirta" name="Zmoniu_comentarai">
+		<h1>WRITE YOUR COMMENT</h1>
 		<div class="wrapper">
-			<h1>Comments</h1>
 			<form action="http://localhost/Projektai1/Simui/post.php" method="POST">
 				<table>
 					<tr><td>Name: <br><input class="aname" type="text" name="name" required /></td></tr>
 					<tr><td colspan="2">Comment: </td></tr>
-					<tr><td colspan="5"><textarea name="comment" rows="10" cols="50" required></textarea></td></tr>
+					<tr><td colspan="5"><textarea name="comment" rows="10" cols="30" required></textarea></td></tr>
 					<tr><td colspan="2"><input class="asubmit" type="submit" name="submit" value="Comment"></td></tr>
 				</table>
 			</form>
 	<?php
-	 require("db.php");
+	 	require("db.php");
 
-	$result = $mysqli->query("SELECT name, comment, created_at FROM commenttable" );
-	while($row = $result->fetch_assoc()) 
-	{
-	    echo "<div class=comment-box><p>";
-	    	echo  $row ["created_at"] ."<br>";
-			echo "<b>". ucfirst( $row ['name'] .'</b><br>'); 
-			echo ucfirst( nl2br($row ["comment"]));	
-		echo "</p></div>";
-	}
+		$result = $mysqli->query("SELECT name, comment, created_at FROM commenttable ORDER BY created_at" );
+
+		while($row = $result->fetch_assoc()){
+    		echo "<div class=comment-box><p>";
+    			echo  $row ["created_at"] ."<br><br>";
+				echo "<b>". $row ['name'] .'</b><br>'; 
+				echo ucfirst( nl2br($row ["comment"]));	
+			echo "</p></div>";
+		}
 	 ?>
 		</div>
 </section>

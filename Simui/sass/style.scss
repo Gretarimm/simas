@@ -84,7 +84,15 @@ header{
 		margin-left: 30px;
 	}
 	img:hover{
-		width: 135px;
+		margin-top:4%; 
+		-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
 	}
 }		
 nav{
@@ -100,7 +108,15 @@ nav{
 		margin-left: 2%;
 		}
 		img:hover{
-			width: 220px;
+			margin-top:1%; 
+		-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.2);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 200ms ease-in;
+    transform: scale(1.2);
 		}
 	}
 	ul{
@@ -132,6 +148,7 @@ nav{
 	.wrapper{
 		max-width: 1200px;
 		margin:auto;
+		padding-bottom:7%;
 		h1{
 			color: white;
 			font-size: 45px;
@@ -267,6 +284,7 @@ nav{
 	.wrapper{
 		max-width: 1200px;
 		margin:auto;
+		padding-bottom:7%;
 		h1{
 			color: white;
 			font-size: 45px;
@@ -401,9 +419,10 @@ nav{
 	.wrapper{
 		max-width: 1200px;
 		margin:auto;
+		padding-bottom: 7%;
 		div{
 			padding-top:4%;
-			padding-bottom: 7%;
+			padding-bottom: 3%;
 			h1{
 				color: white;
 				font-size: 45px;
@@ -450,7 +469,7 @@ nav{
 			padding-bottom: 3%;
 		}
 		p{
-			font-size: 20px;
+			font-size: 22px;
 			color: black;
 			text-indent:30px;
 			font-weight: bold;
@@ -463,15 +482,13 @@ nav{
 	}
 }
 #ketvirta{
-	background-image: url("../img/4.jpg");
-	background-size: 100%;
-	background-repeat:y-repeat;
-	height:100%;
-	.wrapper{
-		max-width: 1200px;
-		margin:auto;
-		padding-bottom:7%;
-		h1{
+	background-image: url("../img/5.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	padding-bottom:7%;
+	h1{
 			color: white;
 			font-size: 45px;
 			text-align: center;
@@ -479,7 +496,15 @@ nav{
 			font-weight:bold;
 			padding-bottom: 3%;
 		}
+		.wrapper{
+		max-width: 1200px;
+		margin:auto;
+		border: 2px solid gold;
+		background-color:rgba(0,0,0,0.3);
+		padding-bottom: 2%;
+		
 		form{
+			margin-top: 2%;
 			table{
 				margin: 0 auto;
 				tr{
@@ -496,8 +521,7 @@ nav{
 					}
 				}
 				textarea{
-					width: 100%;
-					// height: 80px;
+					width: 150%;
 					box-sizing: border-box;
 					text-indent:10px;
 					font-size: 16px;
@@ -515,7 +539,6 @@ nav{
 						text-decoration: none;
 						border:none;
 						border-radius:5px;
-						margin: auto;
 					    display: block;
 					    margin-top: 2%;
 					}
@@ -523,6 +546,7 @@ nav{
 			}
 		}
 		.comment-box{
+			margin:0% 1%;
 			padding: 10px;
 			border-radius: 10px;
 			margin-top: 1%;
@@ -548,50 +572,14 @@ nav{
 		    border-radius: 5px;
 		    margin: auto;
 		    display: block;
-		    margin-top: 4%;
+		    margin-top: 2%;
+		    margin-bottom: 2%; 
 		    width: 30%;
 		    text-align: center;
 		}
 	}
 }
 #penkta{
-	background-image: url("../img/5.jpg");
-	background-size: cover;
-	background-attachment: fixed;
-	background-position:center;
-	background-repeat:no-repeat;
-	.wrapper{
-		max-width: 1200px;
-		margin:auto;
-		padding-bottom:7%;
-		h1{
-			color: white;
-			font-size: 45px;
-			text-align: center;
-			padding-top:8%;
-			font-weight:bold;
-			padding-bottom: 3%;
-		}
-		div{
-			border: 2px solid gold;
-			padding-top:2%;
-			background-color:$rgb;
-			padding-bottom: 3%;
-			p{
-				font-size: 16px;
-			    color: white;
-			    margin: 1% 2%;
-			    strong{
-			    	color: gold;
-
-			    }
-			}
-			p:last-child{
-			}
-		}
-	}
-}
-#sesta{
 	background-image: url("../img/006.jpg");
 	height:100%;
 	background-size: cover;
@@ -620,17 +608,48 @@ nav{
 				margin: auto;
 				margin-top: 3%;
 				padding-bottom:0;
-				width: 180px;
-				a{
-					img[src="img/skype.png"]{
-						height: 80px;
-						margin-right:2%;
+				width: 350px;
+				div{
+					display: inline-block;
+					width: 110px;
+					a{
+						.visi{
+							height: 80px;
+							
+						}
+					}
+					p{
+						font-size: 13.5px;
+						margin-top: 20px;
 					}
 				}
-				a{
-					img[src="img/1-facebook.png"]{
-						height: 80px;
+				div{
+					display: inline-block;
+					a{
+						.visi{
+							height: 80px;
+							margin-right:2%;
+							margin-left:2%;
+							display: block;
+   							margin: auto; 
+						}
 					}
+					p{
+
+					}
+				}
+				div{
+
+					a{
+						.visii{
+							height: 80px;
+							margin-left: 25px;
+							
+						}
+					}
+					p{
+					margin-top: 20px;
+					}	
 				}
 			}
 		}
@@ -640,6 +659,7 @@ nav{
 			font-size: 30px;
 			text-align: center;
 			padding-bottom:3%;
+			text-decoration:none;
 		}
 		div{
 			padding-bottom:3%;
@@ -650,6 +670,7 @@ nav{
 				margin-right: 3%;
 				margin-bottom: 2%;
 				display: inline-block;
+
 			}
 			img[src="img/payments_320.jpg"]{
 				margin-left: 2%;
@@ -700,113 +721,9 @@ footer{
 	}	
 	#nuline{
 		height: 100vh;
-		.wrapper{
-			h1{
-			}
-			div{
-				.plentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-				.alentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-			}
-		}
 	}
 	#pirma{
 		height: 100vh;
-		.wrapper{
-			h1{
-			}
-			div{
-				.plentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{				
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-				.alentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-			}
-		}
-	}
-	#antra{
-		.wrapper{
-			div{
-				h1{
-				}
-				p{
-				    strong{
-				    }
-				}
-				p:last-child{
-				}
-			}
-		}
-	}
-	#trecia{
-		.wrapper{
-			h1{
-			}
-			p{
-			}
-		}
-	}
-	#ketvirta{
-		.wrapper{
-			h1{
-				padding-top:10%;
-				padding-bottom: 3%;
-			}
-			p{
-			    strong{
-			    }
-			}
-			p:last-child{
-			}
-		}
 	}
 	#penkta{
 		.wrapper{
@@ -815,31 +732,7 @@ footer{
 		    padding-bottom: 4%;
 		    font-size: 45px;
 			}
-			div{
-				p{
-				}
-				div{
-					a{
-						img[src="img/skype.png"]{
-						}
-					}
-					a{
-						img[src="img/1-facebook.png"]{
-						}
-					}
-				}
-			}
-			p{
-			}
-			div{
-				img[src="img/paypal_logo1.jpg"]{
-				}
-				img[src="img/payments_320.jpg"]{
-				}
-			}
 		}
-	}
-	footer{
 	}
 }	
 @media only screen and(max-width: 1817px){
@@ -871,141 +764,9 @@ footer{
 	}	
 	#nuline{
 		height: 100vh;
-		.wrapper{
-			h1{
-			}
-			div{
-				.plentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-				.alentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-			}
-		}
 	}
 	#pirma{
 		height: 100vh;
-		.wrapper{
-			h1{
-			}
-			div{
-				.plentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{				
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-				.alentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-			}
-		}
-	}
-	#antra{
-		.wrapper{
-			div{
-				h1{
-				}
-				p{
-				    strong{
-				    }
-				}
-				p:last-child{
-				}
-			}
-		}
-	}
-	#trecia{
-		.wrapper{
-			h1{
-			}
-			p{
-			}
-		}
-	}
-	#ketvirta{
-		.wrapper{
-			h1{
-			}
-			p{
-			    strong{
-			    }
-			}
-			p:last-child{
-			}
-		}
-	}
-	#penkta{
-		.wrapper{
-			h1{
-			}
-			div{
-				p{
-				}
-				div{
-					a{
-						img[src="img/skype.png"]{
-						}
-					}
-					a{
-						img[src="img/1-facebook.png"]{
-						}
-					}
-				}
-			}
-			p{
-			}
-			div{
-				img[src="img/paypal_logo1.jpg"]{
-				}
-				img[src="img/payments_320.jpg"]{
-				}
-			}
-		}
-	}
-	footer{
 	}
 }
 @media only screen and(max-width: 1674px){
@@ -1034,148 +795,6 @@ footer{
 			li:hover{
 			}
 		}
-	}	
-	#nuline{
-		.wrapper{
-			h1{
-			
-			}
-			div{
-				
-				.plentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-				.alentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-			}
-		}
-	}
-	#pirma{
-		.wrapper{
-			h1{
-				
-			}
-			div{
-				
-				.plentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{				
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-				.alentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-			}
-		}
-	}
-	#antra{
-		.wrapper{
-			div{
-				
-				h1{
-				}
-				p{
-				    strong{
-				    }
-				}
-				p:last-child{
-				}
-			}
-		}
-	}
-	#trecia{
-		.wrapper{
-			h1{
-			}
-			p{
-			}
-		}
-	}
-	#ketvirta{
-		.wrapper{
-			h1{
-				
-			}
-			p{
-			    strong{
-			    }
-			}
-			p:last-child{
-			}
-		}
-	}
-	#penkta{
-		.wrapper{
-			h1{
-			}
-			div{
-				p{
-				}
-				div{
-					a{
-						img[src="img/skype.png"]{
-						}
-					}
-					a{
-						img[src="img/1-facebook.png"]{
-						}
-					}
-				}
-			}
-			p{
-			}
-			div{
-				img[src="img/paypal_logo1.jpg"]{
-				}
-				img[src="img/payments_320.jpg"]{
-				}
-			}
-		}
-	}
-	footer{
 	}
 }
 @media only screen and(max-width: 1590px){
@@ -1190,14 +809,11 @@ footer{
 	nav{
 		a{
 			img{
-				// margin-right: 0%;
 			}
 		}
 		ul{
-			// margin-right: 5%;
 			li{	
 				a{
-					// padding: 20px 45px;
 				}
 			}
 			.active{
@@ -1215,6 +831,7 @@ footer{
 			}
 			div{
 				padding-top:5%;
+			
 				.plentele{
 					h1{
 						span{
@@ -1249,11 +866,13 @@ footer{
 	#pirma{
 		height: 100%;
 		.wrapper{
+			
 			h1{
 				padding-top:9%;
 			}
 			div{
 				padding-top: 5%;
+				
 				.plentele{
 					h1{
 						span{
@@ -1300,57 +919,6 @@ footer{
 				}
 			}
 		}
-	}
-	#trecia{
-		.wrapper{
-			h1{
-			}
-			p{
-			}
-		}
-	}
-	#ketvirta{
-		.wrapper{
-			h1{
-				padding-top:9%;
-			}
-			p{
-			    strong{
-			    }
-			}
-			p:last-child{
-			}
-		}
-	}
-	#penkta{
-		.wrapper{
-			h1{
-			}
-			div{
-				p{
-				}
-				div{
-					a{
-						img[src="img/skype.png"]{
-						}
-					}
-					a{
-						img[src="img/1-facebook.png"]{
-						}
-					}
-				}
-			}
-			p{
-			}
-			div{
-				img[src="img/paypal_logo1.jpg"]{
-				}
-				img[src="img/payments_320.jpg"]{
-				}
-			}
-		}
-	}
-	footer{
 	}
 }
 @media only screen and(max-width: 1490px){
@@ -1448,78 +1016,6 @@ footer{
 			}
 		}
 	}
-	#pirma{
-		.wrapper{
-			h1{
-			}
-			div{
-				.plentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{				
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-				.alentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-			}
-		}
-	}
-	#antra{
-		.wrapper{
-			div{
-				h1{
-				}
-				p{
-				    strong{
-				    }
-				}
-				p:last-child{
-				}
-			}
-		}
-	}
-	#trecia{
-		.wrapper{
-			h1{
-			}
-			p{
-			}
-		}
-	}
-	#ketvirta{
-		.wrapper{
-			h1{
-				padding-top:10%;
-				padding-bottom: 3%;
-			}
-			p{
-			    strong{
-			    }
-			}
-			p:last-child{
-			}
-		}
-	}
 	#penkta{
 		.wrapper{
 			h1{
@@ -1527,32 +1023,8 @@ footer{
 		    padding-bottom: 4%;
 		    font-size: 45px;
 			}
-			div{
-				p{
-				}
-				div{
-					a{
-						img[src="img/skype.png"]{
-						}
-					}
-					a{
-						img[src="img/1-facebook.png"]{
-						}
-					}
-				}
-			}
-			p{
-			}
-			div{
-				img[src="img/paypal_logo1.jpg"]{
-				}
-				img[src="img/payments_320.jpg"]{
-				}
-			}
 		}
 	}
-	footer{
-	}	
 }
 @media only screen and(max-width: 1380px){
 	header{
@@ -1612,92 +1084,6 @@ footer{
 			}
 		}
 	}
-	#nuline{
-		.wrapper{
-			h1{
-			}
-			div{
-				.plentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-				.alentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-			}
-		}
-	}
-	#pirma{
-		.wrapper{
-			h1{
-			}
-			div{
-				.plentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{				
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-				.alentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-			}
-		}
-	}
-	#antra{
-		.wrapper{
-			div{
-				h1{
-				}
-				p{
-				    strong{
-				    }
-				}
-				p:last-child{
-				}
-			}
-		}
-	}
 	#trecia{
 		.wrapper{
 			h1{
@@ -1706,48 +1092,6 @@ footer{
 				width: 42%;
 			}
 		}
-	}
-	#ketvirta{
-		.wrapper{
-			h1{
-			}
-			p{
-			    strong{
-			    }
-			}
-			p:last-child{
-			}
-		}
-	}
-	#penkta{
-		.wrapper{
-			h1{
-			}
-			div{
-				p{
-				}
-				div{
-					a{
-						img[src="img/skype.png"]{
-						}
-					}
-					a{
-						img[src="img/1-facebook.png"]{
-						}
-					}
-				}
-			}
-			p{
-			}
-			div{
-				img[src="img/paypal_logo1.jpg"]{
-				}
-				img[src="img/payments_320.jpg"]{
-				}
-			}
-		}
-	}
-	footer{	
 	}
 }
 @media only screen and(max-width: 1230px){
@@ -1785,36 +1129,6 @@ footer{
 			h1{
 				font-size: 40px;
 			}
-			div{
-				.plentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-				.alentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-			}
 		}
 	}
 	#pirma{
@@ -1822,50 +1136,6 @@ footer{
 			h1{
 				font-size: 40px;
 			}
-			div{
-				.plentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{				
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-				.alentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-			}
-		}
-	}
-	#antra{
-		.wrapper{
-			div{
-				h1{
-				}
-				p{
-				    strong{
-				    }
-				}
-				p:last-child{
-				}
-			}
 		}
 	}
 	#trecia{
@@ -1873,216 +1143,10 @@ footer{
 			h1{
 			}
 			p{
-				width: 44%;
+				width: 43%;
 			}
 		}
 	}
-	#ketvirta{
-		.wrapper{
-			h1{
-			}
-			p{
-			    strong{
-			    }
-			}
-			p:last-child{
-			}
-		}
-	}
-	#penkta{
-		.wrapper{
-			h1{
-			}
-			div{
-				p{
-				}
-				div{
-					a{
-						img[src="img/skype.png"]{
-						}
-					}
-					a{
-						img[src="img/1-facebook.png"]{
-						}
-					}
-				}
-			}
-			p{
-			}
-			div{
-				img[src="img/paypal_logo1.jpg"]{
-				}
-				img[src="img/payments_320.jpg"]{
-				}
-			}
-		}
-	}
-	footer{
-	}	
-}
-@media only screen and(max-width: 1130px){
-	header{
-		.hamburger{		
-		}
-		.cross{	
-		}
-		img{		
-		}
-	}
-	nav{
-		a{
-			img{
-			}
-		}
-		ul{
-			// margin-right: 3%;
-			li{	
-				a{
-				}
-			}
-			.active{
-			}
-			li:hover{
-			}
-		}
-	}
-	#nuline{
-		.wrapper{
-			h1{
-			}
-			div{
-				.plentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-				.alentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-			}
-		}
-	}
-	#pirma{
-		.wrapper{
-			h1{
-			}
-			div{
-				.plentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{				
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-				.alentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-			}
-		}
-	}
-	#antra{
-		.wrapper{
-			div{
-				h1{
-				}
-				p{
-				    strong{
-				    }
-				}
-				p:last-child{
-				}
-			}
-		}
-	}
-	#trecia{
-		.wrapper{
-			h1{
-			}
-			p{
-				width: 48%;
-			}
-		}
-	}
-	#ketvirta{
-		.wrapper{
-			h1{
-			}
-			p{
-			    strong{
-			    }
-			}
-			p:last-child{
-			}
-		}
-	}
-	#penkta{
-		.wrapper{
-			h1{
-			}
-			div{
-				p{
-				}
-				div{
-					a{
-						img[src="img/skype.png"]{
-						}
-					}
-					a{
-						img[src="img/1-facebook.png"]{
-						}
-					}
-				}
-			}
-			p{
-			}
-			div{
-				img[src="img/paypal_logo1.jpg"]{
-				}
-				img[src="img/payments_320.jpg"]{
-				}
-			}
-		}
-	}
-	footer{
-	}	
 }
 @media only screen and(max-width: 1180px){
 	header{
@@ -2123,62 +1187,32 @@ footer{
 		img{		
 		}
 	}
-		nav{
-			a{
-				img{
-				}
-			}
-			ul{
-				li{	
-					a{
-						// padding:20px 18px;
-						// font-size: 18px;
-					}
-				}
-				.active{
-					display:block;
-				}
-				li:hover{
-				}
+	nav{
+		a{
+			img{
 			}
 		}
-		#nuline{
-			.wrapper{
-				h1{
-					font-size: 40px;
-				}
-				div{
-					.plentele{
-						h1{
-							span{
-							}
-						}
-						form{
-							p{			
-							}
-							input{
-							}
-							.button{
-							}
-						}
-					}
-					.alentele{
-						h1{
-							span{
-							}
-						}
-						form{
-							p{			
-							}
-							input{
-							}
-							.button{
-							}
-						}
-					}
+		ul{
+			li{	
+				a{
+					// padding:20px 18px;
+					// font-size: 18px;
 				}
 			}
+			.active{
+				display:block;
+			}
+			li:hover{
+			}
 		}
+	}
+	#nuline{
+		.wrapper{
+			h1{
+				font-size: 40px;
+			}
+		}
+	}
 }
 @media only screen and(max-width: 1036px){
 	header{
@@ -2240,143 +1274,15 @@ footer{
 			}
 		}
 	}
-	#nuline{
-		.wrapper{
-			h1{
-			}
-			div{
-				.plentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-				.alentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-			}
-		}
-	}
-	#pirma{
-		.wrapper{
-			h1{
-			}
-			div{
-				.plentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{				
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-				.alentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-			}
-		}
-	}
-	#antra{
-		.wrapper{
-			div{
-				h1{
-				}
-				p{
-				    strong{
-				    }
-				}
-				p:last-child{
-				}
-			}
-		}
-	}
 	#trecia{
 		.wrapper{
 			h1{
 			}
 			p{
-				width: 59%;
+				width: 56%;
 			}
 		}
 	}
-	#ketvirta{
-		.wrapper{
-			h1{
-			}
-			p{
-			    strong{
-			    }
-			}
-			p:last-child{
-			}
-		}
-	}
-	#penkta{
-		.wrapper{
-			h1{
-			}
-			div{
-				p{
-				}
-				div{
-					a{
-						img[src="img/skype.png"]{
-						}
-					}
-					a{
-						img[src="img/1-facebook.png"]{
-						}
-					}
-				}
-			}
-			p{
-			}
-			div{
-				img[src="img/paypal_logo1.jpg"]{
-				}
-				img[src="img/payments_320.jpg"]{
-				}
-			}
-		}
-	}
-	footer{
-	}	
 }																													
 @media only screen and(max-width: 900px){
 	header{
@@ -2506,46 +1412,45 @@ footer{
 		}
 	}
 	#antra{
-			.wrapper{
-				div{
-					h1{
-						font-size: 40px;
-						padding-top: 20%;
-					}
-					p{
-					    strong{
-					    }
-					}
-					p:last-child{
-					}
-				}
-			}
-		}
-	#trecia{
-			.wrapper{
-				h1{
-					font-size: 40px;
-					margin-left: 26%;
-					padding-top: 20%;
-				}
-				p{
-					// width: 35%;
-				}
-			}
-	}
-	#ketvirta{
-			.wrapper{
+		.wrapper{
+			div{
 				h1{
 					font-size: 40px;
 					padding-top: 20%;
 				}
 				p{
-				    strong{
-				    }
+					strong{
+					}
 				}
 				p:last-child{
 				}
 			}
+		}
+	}
+	#trecia{
+		.wrapper{
+			h1{
+				font-size: 40px;
+				margin-left: 26%;
+				padding-top: 20%;
+			}
+			p{
+			}
+		}
+	}
+	#ketvirta{
+		.wrapper{
+			h1{
+				font-size: 40px;
+				padding-top: 20%;
+			}
+			p{
+				strong{
+				}
+			}
+			p:last-child{
+			}
+		}
 	}
 	#penkta{
 		.wrapper{
@@ -2713,20 +1618,6 @@ footer{
 			}
 		}
 	}
-	#antra{
-		.wrapper{
-			div{
-				h1{
-				}
-				p{
-				    strong{
-				    }
-				}
-				p:last-child{
-				}
-			}
-		}
-	}
 	#trecia{
 		.wrapper{
 			h1{
@@ -2736,48 +1627,6 @@ footer{
 				width: 63%;
 			}
 		}
-	}
-	#ketvirta{
-		.wrapper{
-			h1{
-			}
-			p{
-			    strong{
-			    }
-			}
-			p:last-child{
-			}
-		}
-	}
-	#penkta{
-		.wrapper{
-			h1{
-			}
-			div{
-				p{
-				}
-				div{
-					a{
-						img[src="img/skype.png"]{
-						}
-					}
-					a{
-						img[src="img/1-facebook.png"]{
-						}
-					}
-				}
-			}
-			p{
-			}
-			div{
-				img[src="img/paypal_logo1.jpg"]{
-				}
-				img[src="img/payments_320.jpg"]{
-				}
-			}
-		}
-	}
-	footer{
 	}
 }
 @media only screen and(max-width: 750px){
@@ -2927,71 +1776,15 @@ footer{
 			}
 		}
 	}
-	#antra{
-		.wrapper{
-			div{
-				h1{
-				}
-				p{
-				    strong{
-				    }
-				}
-				p:last-child{
-				}
-			}
-		}
-	}
 	#trecia{
 		.wrapper{
 			h1{
 			}
 			p{
-				width: 66%;
+				width: 65%;
 				margin-left: 8%;
 			}
 		}
-	}
-	#ketvirta{
-		.wrapper{
-			h1{
-			}
-			p{
-			    strong{
-			    }
-			}
-			p:last-child{
-			}
-		}
-	}
-	#penkta{
-		.wrapper{
-			h1{
-			}
-			div{
-				p{
-				}
-				div{
-					a{
-						img[src="img/skype.png"]{
-						}
-					}
-					a{
-						img[src="img/1-facebook.png"]{
-						}
-					}
-				}
-			}
-			p{
-			}
-			div{
-				img[src="img/paypal_logo1.jpg"]{
-				}
-				img[src="img/payments_320.jpg"]{
-				}
-			}
-		}
-	}
-	footer{
 	}
 }
 @media only screen and(max-width: 680px){
@@ -3028,111 +1821,6 @@ footer{
 			h1{
 				font-size: 40px;
 			}
-			div{
-				.plentele{
-						
-					h1{
-						span{
-						}
-					}
-					form{
-						// font-size: 16px;
-						p{			
-						}
-						.p{
-							// margin-bottom: 5%;
-						}
-						#milai{
-							// margin-bottom:30px;
-						}
-						input{
-						}
-						label{
-							// line-height:0;
-							// display: block;
-						}
-						.button{
-						}
-					}
-				}
-				.alentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						// font-size: 16px;
-						p{			
-						}
-						.p{
-							// margin-bottom: 5%;
-						}
-						#milaia{
-							// margin-bottom:30px;
-						}
-						input{
-						}
-						label{
-							// line-height:0;
-							// display: block;
-						}
-						.button{
-						}
-					}
-				}
-			}
-		}
-	}
-	#pirma{
-		.wrapper{
-			h1{
-			}
-			div{
-				.palentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						// font-size: 16px;
-						p{				
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-				.aalentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						// font-size: 16px;
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-			}
-		}
-	}
-	#antra{
-		.wrapper{
-			div{
-				h1{
-				}
-				p{
-				    strong{
-				    }
-				}
-				p:last-child{
-				}
-			}
 		}
 	}
 	#trecia{
@@ -3145,222 +1833,17 @@ footer{
 			}
 		}
 	}
-	#ketvirta{
-		.wrapper{
-			h1{
-			}
-			p{
-			    strong{
-			    }
-			}
-			p:last-child{
-			}
-		}
-	}
-	#penkta{
-		.wrapper{
-			h1{
-			}
-			div{
-				p{
-				}
-				div{
-					a{
-						img[src="img/skype.png"]{
-						}
-					}
-					a{
-						img[src="img/1-facebook.png"]{
-						}
-					}
-				}
-			}
-			p{
-			}
-			div{
-				img[src="img/paypal_logo1.jpg"]{
-				}
-				img[src="img/payments_320.jpg"]{
-				}
-			}
-		}
-	}
-	footer{
-	}
 }
 @media only screen and(max-width: 680px){
-	header{
-		.hamburger{
-		}
-		.cross{
-		}
-		img{
-		}
-	}
-	nav{
-
-		a{
-			img{
-			}
-		}
-
-		ul{
-			li{	
-				a{
-				}
-			}
-			.active{
-			}
-			li:hover{
-			}
-		}
-	}
-	#nuline{
-		.wrapper{
-			h1{
-			}
-			div{
-				.plentele{
-						
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						#milai{
-						}
-						input{
-						}
-						label{
-						}
-						.button{
-						}
-					}
-				}
-				.alentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						#milaia{
-						}
-						input{
-						}
-						label{
-						}
-						.button{
-						}
-					}
-				}
-			}
-		}
-	}
-	#pirma{
-		.wrapper{
-			h1{
-			}
-			div{
-				.palentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{				
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-				.aalentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-			}
-		}
-	}
-	#antra{
-		.wrapper{
-			div{
-				h1{
-				}
-				p{
-				    strong{
-				    }
-				}
-				p:last-child{
-				}
-			}
-		}
-	}
 	#trecia{
 		.wrapper{
 			h1{
 			}
 			p{
-				width: 74%;
+				width: 67%;
 				margin-left: 10%;
 			}
 		}
-	}
-	#ketvirta{
-		.wrapper{
-			h1{
-			}
-			p{
-			    strong{
-			    }
-			}
-			p:last-child{
-			}
-		}
-	}
-	#penkta{
-		.wrapper{
-			h1{
-			}
-			div{
-				p{
-				}
-				div{
-					a{
-						img[src="img/skype.png"]{
-						}
-					}
-					a{
-						img[src="img/1-facebook.png"]{
-						}
-					}
-				}
-			}
-			p{
-			}
-			div{
-				img[src="img/paypal_logo1.jpg"]{
-				}
-				img[src="img/payments_320.jpg"]{
-				}
-			}
-		}
-	}
-	footer{
 	}
 }
 @media only screen and(max-width: 590px){
@@ -3390,101 +1873,6 @@ footer{
 			}
 		}
 	}
-	#nuline{
-		.wrapper{
-			h1{
-			}
-			div{
-				.plentele{
-						
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						#milai{
-						}
-						input{
-						}
-						label{
-						}
-						.button{
-						}
-					}
-				}
-				.alentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						#milaia{
-						}
-						input{
-						}
-						label{
-						}
-						.button{
-						}
-					}
-				}
-			}
-		}
-	}
-	#pirma{
-		.wrapper{
-			h1{
-			}
-			div{
-				.palentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{				
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-				.aalentele{
-					h1{
-						span{
-						}
-					}
-					form{
-						p{			
-						}
-						input{
-						}
-						.button{
-						}
-					}
-				}
-			}
-		}
-	}
-	#antra{
-		.wrapper{
-			div{
-				h1{
-				}
-				p{
-				    strong{
-				    }
-				}
-				p:last-child{
-				}
-			}
-		}
-	}
 	#trecia{
 		.wrapper{
 			h1{
@@ -3500,43 +1888,24 @@ footer{
 		.wrapper{
 			h1{
 			}
-			p{
-			    strong{
-			    }
-			}
-			p:last-child{
-			}
-		}
-	}
-	#penkta{
-		.wrapper{
-			h1{
-			}
-			div{
-				p{
-				}
-				div{
-					a{
-						img[src="img/skype.png"]{
+			form{
+				table{
+					tr{
+						td{
+							.aname{
+							}
 						}
 					}
-					a{
-						img[src="img/1-facebook.png"]{
+					textarea{
+						width: 100%;				
+					}
+					tr{
+						.asubmit{
 						}
 					}
 				}
 			}
-			p{
-			}
-			div{
-				img[src="img/paypal_logo1.jpg"]{
-				}
-				img[src="img/payments_320.jpg"]{
-				}
-			}
 		}
-	}
-	footer{
 	}
 }
 @media only screen and(max-width: 384px){
@@ -3705,20 +2074,6 @@ footer{
 			}
 		}
 	}
-	#antra{
-		.wrapper{
-			div{
-				h1{
-				}
-				p{
-				    strong{
-				    }
-				}
-				p:last-child{
-				}
-			}
-		}
-	}
 	#trecia{
 		.wrapper{
 			h1{
@@ -3730,50 +2085,6 @@ footer{
 				margin-left: 20%;
 			}
 		}
-	}
-	#ketvirta{
-		.wrapper{
-			h1{
-			}
-			p{
-			    strong{
-			    }
-			}
-			p:last-child{
-			}
-		}
-	}
-	#penkta{
-		.wrapper{
-			h1{
-			}
-			div{
-				p{
-				}
-				div{
-					a{
-						img[src="img/skype.png"]{
-						}
-					}
-					a{
-						img[src="img/1-facebook.png"]{
-						}
-					}
-				}
-			}
-			p{
-			}
-			div{
-				img[src="img/paypal_logo1.jpg"]{
-					
-				}
-				img[src="img/payments_320.jpg"]{
-					
-				}
-			}
-		}
-	}
-	footer{
 	}
 }
 b { font-weight: bold; }

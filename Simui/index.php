@@ -30,13 +30,12 @@
 	<nav>
 		<a href="#nuline"><img  src="img/logo3.png"></a>
 			<ul>
-				<li><a href="#nuline">BUY YOUR GOLD</a></li>
+				<li><a href="#nuline">BUY GOLD</a></li>
 				<li><a href="#pirma">SELL YOUR GOLD</a></li>
 				<li><a href="#antra">FAQ</a></li>
 				<li><a href="#trecia">ABOUT ME</a></li>
-				<li><a href="#ketvirta">COMMENT</a></li>
-				<li><a href="#penkta">TERMS</a></li>
-				<li><a href="#sesta">CONTACT</a></li>
+				<li><a href="#ketvirta">COMMENTS</a></li>
+				<li><a href="#penkta">CONTACT</a></li>
 			</ul>
 	</nav>
 	<section id="nuline" name="BUY GOLD">
@@ -125,57 +124,37 @@
 			<div>
 				<h1>FAQ</h1>
 				<div class="antraste">
-					<p><strong class="strong">Important! After you receive gold, never trade it back to anyone. Anybody who is claiming to work for us and who is asking for your gold back is a scammer!</strong></p>
+					<p><strong class="strong">Important! After You receive gold, never trade it back to anyone. Anybody who is claiming to work for us and who is asking for your gold back is a scammer!</strong></p>
 
-					<p><strong class="strong">1. How do I buy Runescape gold?</strong><br>Just choose how much gold do you want to buy and pay for it using your PayPal account. Please keep in mind that you must be the owner of the PayPal account and the credit card that you have used for your purchase. Now you are ready to contact our 24/7 Live Support team and claim your Gold! Also note that you might be asked to submit a copy of your scanned ID to confirm your identity. If you cannot provide documents when you are asked to, you will be fully refunded.</p>
+					<p><strong class="strong">1. How do I buy Runescape gold?</strong><br>Just choose how much gold do you want to buy and pay for it using your chosen method.</p>
 
-					<p><strong class="strong">2. What payment methods do you accept for Runescape Gold?</strong><br>Feel free to order gold using PayPal at any time. We also accept Bitcoins, Bank wire transfers, Skrill (MoneyBookers) and Westen Union. If you want to use any payment method mentioned above, please contact our Live Support team.</p>
+					<p><strong class="strong">2. What payment methods do you accept for Runescape Gold?</strong><br>Feel free to order gold using PayPal at any time, also accept bank wire transfers, Skrill (MoneyBookers) and Westen Union.</p>
 
-					<p><strong class="strong">3. Will I need to provide my ID copy?</strong><br>In most cases we do ask for ID copy. This is to prevent buyers from using stolen PayPal accounts. We will accept any personal document issued by your government confirming your identity. Remember that your information in documents must match your PayPal account’s information. All your details will be kept safely and will only be disclosed in a case of fraud.</p>
+					<p><strong class="strong">3. What are chances that I will get banned?</strong><br>The possibility of getting banned is very small and it happens on very rare occasions. In fact, throughout my practice there has not been a single case when my buyer got banned for buying gold.  However, if in an unfortunate situation it did happen, I would not take responsibility for Jagex decisions.</p>
 
-					<p><strong class="strong">4. What are chances that I will get banned?</strong><br>The possibility of getting banned is very small and it happens on very rare occasions. In fact, throughout our practice there has not been a single case when our buyer got banned for buying gold from us! However, if in an unfortunate situation it did happen, we would not take responsibility for Jagex decisions.</p>
+					<p><strong class="strong">4. When I will get my gold?</strong><br>95% of orders are delivered within 5 minutes. However, if due to some circumstances I will not able to deliver gold within 6 hours, You will be contacted personaly by myself. Fortunately, this has never occurred in my practice!</p>
 
-					<p><strong class="strong">5. When I will get my gold?</strong><br>95% of orders are delivered within 5 minutes. However, if due to some circumstances we were not able to deliver gold within 24 hours, you would be fully refunded. Fortunately, this has never occurred in our practice!</p>
-
-					<p><strong class="strong">6. How do I get my gold?</strong><br>After your payment gets processed, you need to contact our Live Support. You will be told a world name and a place where you can pick up your gold. Then, you will meet our trader in-game personally and trade him.</p>
-
-					<p><strong class="strong">7. Are you trusted?</strong><br>We have been in this business for more than 3 years. We have more than 10,000 satisfied customers and numbers are growing. We are happy to link you to websites where you can check our feedback!</p>
-
-					<p><strong class="strong">8. Additional information</strong><br>All trades are final. We do not own any items or gold in game. All content is property of Jagex. We only find buyers and sellers who want to exchange their real world money into in-game currency and vice versa. We reserve the right to refund orders if we believe that the purchase might be a fraud attempt. Use of VPN or Proxy is prohibited.</p>
-		
+					<p><strong class="strong">5. How do I get my gold?</strong><br>After your payment gets processed, You will get notification for further actions. Example: world and place where you gonna meet for transaction. </p>
+					<p><strong class="strong">6. If You have question's that waren't answered here, You can reach me using contacts.</p>
 				</div>
 			</div>
 		</div>
 	</section>
+
 	<section id="trecia" name="ABOUT ME">
 		<div class="wrapper">
 				<h1>ABOUT ME</h1>
-				<p>
-					Food4Rs is a Runescape gold trading company based in Europe.
-				</p>
-				<p>
-					We have been in this business for more than 3 years now.
-				</p>
-				<p>
-					We started trading in various forums and with each year our staff became more and more professional.	
-				</p>
-				<p>
-					Our main goal is to provide the most convenient and efficient services while offering the best prices in the market.
-				</p>
-				<p>
-					With this approach and dedication to our work we have more than 10,000 satisfied customers and 100% positive feedback ratings.
-				</p>
-				<p>
-					 Also, there is a very helpful Live Support team which is always trying their very best to help you with any issue.
-				</p>
-				<p>
-					 We are online 24/7 and ready to buy or sell gold anytime!.
-				</p>
+				<p>fPs^ Gold shop is a trusty assiosiate for selling or buying runescape gold.</p>
+				<p>I've been doing this for 10 years. I've started in forums, u can find me by name: fPs, fpsnx.</p> 
+				<p>Over past 10 Years I've never had any disputes with my clients, that's why i've been known as a trustworthy seller.</p>
+				<p>I always try to make deals with best prices but i never go first. </p>
+				<p>You can contact me using these methods: Skype , Facebook, email, live-chat.</p>
 		</div>
 	</section>
+
 	<section id="ketvirta" name="Zmoniu_comentarai">
+		<h1>WRITE YOUR COMMENT</h1>
 		<div class="wrapper">
-			<h1>Comments</h1>
 			<form action="http://localhost/Projektai1/Simui/post.php" method="POST">
 				<table>
 					<tr><td>Name: <br><input class="aname" type="text" name="name" required /></td></tr>
@@ -188,39 +167,44 @@
 <?php
  require("db.php");
  require("block.php");
+$ip = $_SERVER['REMOTE_ADDR'];
+echo $ip;
  ?>
+
 			<a href="comment.php" class="more" target="_blank">More Comments</a>
 		</div>	
 	</section>
-	<section id="penkta" name="TERMS">
-		<div class="wrapper">
-			<h1>TERMS</h1>
-			<div>
-				<p><strong class="strong">1. TERMS AND CONDITIONS</strong><br>Food4rs.com is owned and regulated by MMO GAMES LP (Company). When visiting or using website you automatically accept our Terms and Conditions. Company have right to change Terms and Conditions at any time without notice. It is customer responsibility to be aware of Terms and review it regularly.</p>
-				<p><strong class="strong">2. GOODS DELIVERY</strong><br>After company receives payment from customer we establish fastest possible delivery to buyer using communication through live chat. All goods we sell are virtual goods and all sales are final. Company does not have returning policy regarding all sales are final.</p>
-				<p><strong class="strong">3. REFUND POLICY</strong><br>After purchase is complete and Company has received payment we establish delivery with buyer in shortest possible time. If delivery could not be established or customer wants full refund, we issue refund before goods delivery. Please note that refunds can take up to 1 week to complete. Refund are issued from Company side within 72 hours and it can take up to 4 working days to complete. This time period depends on payment method.</p>
-			</div>
-			
-		</div>
-	</section>
-	<section id="sesta" name="CONTACT">
+
+	<section id="penkta" name="CONTACT">
 		<div class="wrapper">
 			<h1>CONTACT</h1>
 			<div>
-				<p>Click on Skype or Facebook icon to add</p>
+				<p>Click on Skype, Facebook or Email icon to add</p>
 				<div class="facebook">
-					<a href="https://hatscripts.com/addskype/?tramadol422" target="_blank" ><img src="img/skype.png"></a>
-					<a href="https://www.facebook.com/simas.ivanovas" target="_blank"><img src="img/1-facebook.png"></a>
+					<div>
+						<a href="https://hatscripts.com/addskype/?tramadol422" target="_blank" ><img class="visi" src="img/skype.png"></a>
+						<p>tramadol422</p>
+					</div>
+					<div>
+						<a href="https://www.facebook.com/Fps-Gold-1588223654603118/" target="_blank"><img src="img/1-facebook.png" class="visi" ></a>
+						<p>Fps Gold</p>
+					</div>
+					<div>
+						<a href="mailto:fpsgold@hotmail.com" ><img src="img/em.png" class="visii" ></a>
+						<p>fpsgold@hotmail.com</p>
+					</div>
+					 
 				</div>
 			</div>
 			<p class="p">Pay methods</p>
 			<div class="pay-method">
-				<img src="img/paypal_logo1.jpg">
-				<img src="img/payments_320.jpg">
+				<img  src="img/paypal_logo1.jpg">
+				<img  src="img/payments_320.jpg">
 			</div>
 			
 		</div>
 	</section>
+
 	<footer></footer>
 
 
