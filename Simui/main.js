@@ -4,8 +4,6 @@ $( document ).ready(function() {
 
 $( ".cross" ).hide();
 
-
-
 	$( ".hamburger" ).click(function() {
 		$( "nav" ).slideToggle( "slow", function() {
 			$( ".hamburger" ).hide();
@@ -45,20 +43,83 @@ function screenTest(e) {
         });
   } else {
     location.reload();
-    /* the viewport is more than than 600 pixels wide */
   }
 }
 
 mql.addListener(screenTest);
- 
+
+// _________fb islindimas_________
+    $("#fbutton").on("mouseover", function(){  
+        $('#facebookiframe').show('slow');
+    });
+
+    $("#facebookiframe").on("mouseout", function(){
+        $('#facebookiframe').hide();
+    });    
+    
+// _________buy button pasirinkimai__________
+
+    // $('.afacebook, .bfacebook, .cfacebook, .dfacebook').hide();
+
+    //     $('.button').toggle(function(){
+    //         $('.button, .abutton, .bbutton, .cbutton').css({"background-color": "#E16428"});
+    //         $('.afacebook, .bfacebook, .cfacebook, .dfacebook').show();
+    //     }, 
+    //     function(){
+    //         $('.button, .abutton, .bbutton, .cbutton').css({"background-color": "orange"});
+    //         $('.afacebook, .bfacebook, .cfacebook, .dfacebook').hide();
+    // });
+     $('.afacebook').hide();
+
+        $('.button').toggle(function(){
+            $('.button').css({"background-color": "black", 'border':'3.5px solid orange', 'color':'orange'});
+            $('.afacebook').show();
+        }, 
+        function(){
+            $('.button').css({"background-color": "orange", 'border':'none', 'color':'black'});
+            $('.afacebook').hide();
+    });
+        $('.bfacebook').hide();
+
+        $('.abutton').toggle(function(){
+            $('.abutton').css({"background-color": "black", 'border':'3.5px solid orange', 'color':'orange'});
+            $('.bfacebook').show();
+        }, 
+        function(){
+            $('.abutton').css({"background-color": "orange", 'border':'none', 'color':'black'});
+            $('.bfacebook').hide();
+    });
+        $('.cfacebook').hide();
+            $('.bbutton').toggle(function(){
+                $('.bbutton').css({"background-color": "black", 'border':'3.5px solid orange', 'color':'orange'});
+                $('.cfacebook').show();
+        }, 
+        function(){
+            $('.bbutton').css({"background-color": "orange", 'border':'none', 'color':'black'});
+            $('.cfacebook').hide();
+    });
+        $('.dfacebook').hide();
+
+        $('.cbutton').toggle(function(){
+            $('.cbutton').css({"background-color": "black", 'border':'3.5px solid orange', 'color':'orange'});
+            $('.dfacebook').show();
+        }, 
+        function(){
+            $('.cbutton').css({"background-color": "orange", 'border':'none', 'color':'black'});
+            $('.dfacebook').hide();
+    });
 });
+
+
+
+
 
 
 
 // _____________________________________
 // Apsirasyti funkcijas valiutos konvertavimui
 function vienasMilijonasEurai(pinigai) {
-    var koef = 0.80;
+    var koef = 0.88;
     return pinigai*koef;
 }
 function vienasMilijonasUSD(pinigai) {
@@ -70,7 +131,7 @@ function vienasMilijonasGBP(pinigai) {
     return pinigai*koefb;
 }
 function euraisGaunasi(pinigai) {
-    var koef = 0.80;
+    var koef = 0.88;
     return pinigai/koef;
 }
 function USD(pinigai) {

@@ -100,6 +100,7 @@ nav{
 	width: 100%;
 	border-bottom: 2px solid gold;
 	position:fixed;
+	z-index:1;
 	a{
 		img{
 		width: 200px;
@@ -127,7 +128,7 @@ nav{
 			padding: 20px 0px;
 			a{
 				text-decoration: none;
-				padding: 40px 20px; 
+				padding: 20px 20px; 
 				color: white;
 				font-weight: bold;
 				font-size: 1.2em;
@@ -136,15 +137,30 @@ nav{
 			}
 		}
 		li:hover{
-			background :#505160;
+			background:#505160;
 		}
 	}
 }	
-#nuline{
+#BUYGOLD{
 	background-image: url("../img/1.2.png");
 	background-size: cover;
 	height:100%;
 	background-repeat:no-repeat;
+	#fbutton{
+		width: 100px;
+	    margin-left:-30px;
+	    margin-top:300px;
+	    position: fixed;
+	    border-radius: 0px 0px 7px 7px;
+	    transform: rotate(270deg);
+	}
+	iframe{
+		border:4px solid blue;
+		overflow: hidden;
+		position: fixed;
+    	margin-top: 150px;
+    	display:none;
+	}
 	.wrapper{
 		max-width: 1200px;
 		margin:auto;
@@ -163,6 +179,7 @@ nav{
 			padding-bottom: 3%;
 			.plentele{
 				display: inline-block;
+				vertical-align: bottom;
 				width: 40%;
 				background:$rgb;
 				border:$border;
@@ -217,9 +234,50 @@ nav{
 						border-radius:5px;
 					}
 				}
+				.afacebook{
+					display:none;
+    				width: 200px;
+    				margin-top:-35px;
+    				height: 35px;
+    				border-radius: 5px;
+    				padding: 0;
+					.sf{
+						width: 50px;
+    					display: inline-block;
+    					padding: 0;
+    					margin: 0;
+    					margin-top: 3px;
+						img{
+							margin-top:5px;
+							z-index:1;
+							height: 50px;
+							padding:0px;
+						}
+					}
+					.sfl{
+						width: 70px;
+    					display: inline-block;
+    					padding: 0;
+    					margin: 0;
+    					margin-top: 3px;
+    					img{
+							margin-top:5px;
+							z-index:1;
+							height: 50px;
+							padding:0px;
+						}
+					}
+					.sf:hover{
+						border: 2px solid orange;
+					}
+					.sfl:hover{
+						border: 2px solid orange;
+					}
+				}
 			}
 			.alentele{
 				display: inline-block;
+				vertical-align: bottom;
 				width: 40%;
 				background:$rgb;
 				border:$border;
@@ -261,7 +319,7 @@ nav{
 						padding:7px;
 						border-radius: 5px;
 					}
-					.button{
+					.abutton{
 						text-align: center;
 						font-size: 15px;
 						font-weight: bold;
@@ -272,11 +330,52 @@ nav{
 						border-radius:5px;
 					}
 				}
+				.bfacebook{
+					display:none;
+    				width: 200px;
+    				margin-top:-35px;
+    				height: 35px;
+    				border-radius: 5px;
+    				padding: 0;
+					.sf{
+						width: 50px;
+    					display: inline-block;
+    					padding: 0;
+    					margin: 0;
+    					margin-top: 3px;
+
+						img{
+							margin-top:5px;
+							z-index:1;
+							height: 50px;
+							padding:0px;
+						}
+					}
+					.sfl{
+						width: 70px;
+    					display: inline-block;
+    					padding: 0;
+    					margin: 0;
+    					margin-top: 3px;
+    					img{
+							margin-top:5px;
+							z-index:1;
+							height: 50px;
+							padding:0px;
+						}
+					}
+					.sf:hover{
+						border: 2px solid orange;
+					}
+					.sfl:hover{
+						border: 2px solid orange;
+					}
+				}
 			}
 		}
 	}
 }
-#pirma{
+#SELGOLD{
 	background-image: url("../img/7.jpg");
 	background-size: cover;
 	height:100%;
@@ -299,6 +398,7 @@ nav{
 			padding-bottom: 3%;
 			.palentele{
 				display: inline-block;
+				vertical-align: bottom;
 				width: 40%;
 				background:$rgb;
 				border:$border;
@@ -341,7 +441,7 @@ nav{
 						padding:7px;
 						border-radius: 5px;
 					}
-					.button{
+					.bbutton{
 						text-align: center;
 						font-size: 15px;
 						font-weight: bold;
@@ -352,9 +452,51 @@ nav{
 						border-radius:5px;
 					}
 				}
+				.cfacebook{
+					display:none;
+    				width: 200px;
+    				margin-top:-35px;
+    				height: 35px;
+    				border-radius: 5px;
+    				padding: 0;
+					.sf{
+						width: 50px;
+    					display: inline-block;
+    					padding: 0;
+    					margin: 0;
+    					margin-top: 3px;
+
+						img{
+							margin-top:5px;
+							z-index:1;
+							height: 50px;
+							padding:0px;
+						}
+					}
+					.sfl{
+						width: 70px;
+    					display: inline-block;
+    					padding: 0;
+    					margin: 0;
+    					margin-top: 3px;
+    					img{
+							margin-top:5px;
+							z-index:1;
+							height: 50px;
+							padding:0px;
+						}
+					}
+					.sf:hover{
+						border: 2px solid orange;
+					}
+					.sfl:hover{
+						border: 2px solid orange;
+					}
+				}
 			}
 			.aalentele{
 				display: inline-block;
+				vertical-align: bottom;
 				width: 40%;
 				background:$rgb;
 				border:$border;
@@ -395,7 +537,7 @@ nav{
 						padding:7px;
 						border-radius: 5px;
 					}
-					.button{
+					.cbutton{
 						text-align: center;
 						font-size: 15px;
 						font-weight: bold;
@@ -406,11 +548,52 @@ nav{
 						border-radius:5px;
 					}
 				}
+				.dfacebook{
+					display:none;
+					width: 200px;
+					margin-top:-35px;
+					height: 35px;
+					border-radius: 5px;
+					padding: 0;
+					.sf{
+						width: 50px;
+    					display: inline-block;
+    					padding: 0;
+    					margin: 0;
+    					margin-top: 3px;
+
+						img{
+							margin-top:5px;
+							z-index:1;
+							height: 50px;
+							padding:0px;
+						}
+					}
+					.sfl{
+						width: 70px;
+    					display: inline-block;
+    					padding: 0;
+    					margin: 0;
+    					margin-top: 3px;
+    					img{
+							margin-top:5px;
+							z-index:1;
+							height: 50px;
+							padding:0px;
+						}
+					}
+					.sf:hover{
+						border: 2px solid orange;
+					}
+					.sfl:hover{
+						border: 2px solid orange;
+					}
+				}
 			}
 		}
 	}
 }
-#antra{
+#FAQ{
 	background-image: url("../img/1.jpg");
 	background-size: cover;
 	background-attachment: fixed;
@@ -453,7 +636,7 @@ nav{
 		}
 	}
 }
-#trecia{
+#ABOUTME{
 	background-image: url("../img/2.jpg");
 	background-size: cover;
 	background-repeat:no-repeat;
@@ -481,7 +664,7 @@ nav{
 		}
 	}
 }
-#ketvirta{
+#COMMENTS{
 	background-image: url("../img/5.jpg");
 	background-size: cover;
 	background-attachment: fixed;
@@ -529,6 +712,10 @@ nav{
 					border:1.5px solid gold;
 					background-image: url("../img/8.jpg");				
 				}
+				.g-recaptcha{
+					
+				}
+					
 				tr{
 					.asubmit{
 						background-image:url("../img/9.jpg");
@@ -543,6 +730,7 @@ nav{
 					    margin-top: 2%;
 					}
 				}
+				
 			}
 		}
 		.comment-box{
@@ -579,7 +767,7 @@ nav{
 		}
 	}
 }
-#penkta{
+#CONTACT{
 	background-image: url("../img/006.jpg");
 	height:100%;
 	background-size: cover;
@@ -608,10 +796,10 @@ nav{
 				margin: auto;
 				margin-top: 3%;
 				padding-bottom:0;
-				width: 350px;
+				width: 550px;
 				div{
 					display: inline-block;
-					width: 110px;
+					width: 20%;
 					a{
 						.visi{
 							height: 80px;
@@ -619,37 +807,47 @@ nav{
 						}
 					}
 					p{
-						font-size: 13.5px;
+						font-size: 12px;
 						margin-top: 20px;
 					}
 				}
 				div{
 					display: inline-block;
+					margin-left: 2%;
+					width: 20%;
 					a{
 						.visi{
 							height: 80px;
-							margin-right:2%;
-							margin-left:2%;
 							display: block;
    							margin: auto; 
 						}
 					}
-					p{
-
-					}
+					p{}
 				}
 				div{
-
+					display: inline-block;
 					a{
 						.visii{
 							height: 80px;
-							margin-left: 25px;
-							
+							display: block;
+    						margin: auto;
 						}
 					}
 					p{
 					margin-top: 20px;
 					}	
+				}
+				div{
+					vertical-align:top;
+					display: inline-block;
+					width: 20%;
+					a{
+						.visi{
+							height: 80px;
+							display: block;
+    						margin: auto;
+						}
+					}
 				}
 			}
 		}
@@ -719,13 +917,13 @@ footer{
 			}
 		}
 	}	
-	#nuline{
+	#BUYGOLD{
 		height: 100vh;
 	}
-	#pirma{
+	#SELGOLD{
 		height: 100vh;
 	}
-	#penkta{
+	#CONTACT{
 		.wrapper{
 			h1{
 		    padding-top: 10%;
@@ -762,11 +960,11 @@ footer{
 			}
 		}
 	}	
-	#nuline{
-		height: 100vh;
+	#BUYGOLD{
+		height: 100%;
 	}
-	#pirma{
-		height: 100vh;
+	#SELGOLD{
+		height: 100%;
 	}
 }
 @media only screen and(max-width: 1674px){
@@ -823,7 +1021,7 @@ footer{
 			}
 		}
 	}	
-	#nuline{
+	#BUYGOLD{
 		height: 100%;
 		.wrapper{
 			h1{
@@ -863,7 +1061,7 @@ footer{
 			}
 		}
 	}
-	#pirma{
+	#SELGOLD{
 		height: 100%;
 		.wrapper{
 			
@@ -904,7 +1102,7 @@ footer{
 			}
 		}
 	}
-	#antra{
+	#FAQ{
 		.wrapper{
 			div{
 				padding-top: 9%;
@@ -979,7 +1177,7 @@ footer{
 			}
 		}
 	}
-	#nuline{
+	#BUYGOLD{
 		.wrapper{
 			h1{
 			}
@@ -1016,7 +1214,7 @@ footer{
 			}
 		}
 	}
-	#penkta{
+	#CONTACT{
 		.wrapper{
 			h1{
 		    padding-top: 10%;
@@ -1084,7 +1282,7 @@ footer{
 			}
 		}
 	}
-	#trecia{
+	#ABOUTME{
 		.wrapper{
 			h1{
 			}
@@ -1124,21 +1322,21 @@ footer{
 			}
 		}
 	}
-	#nuline{
+	#BUYGOLD{
 		.wrapper{
 			h1{
 				font-size: 40px;
 			}
 		}
 	}
-	#pirma{
+	#SELGOLD{
 		.wrapper{
 			h1{
 				font-size: 40px;
 			}
 		}
 	}
-	#trecia{
+	#ABOUTME{
 		.wrapper{
 			h1{
 			}
@@ -1206,7 +1404,7 @@ footer{
 			}
 		}
 	}
-	#nuline{
+	#BUYGOLD{
 		.wrapper{
 			h1{
 				font-size: 40px;
@@ -1274,7 +1472,7 @@ footer{
 			}
 		}
 	}
-	#trecia{
+	#ABOUTME{
 		.wrapper{
 			h1{
 			}
@@ -1302,6 +1500,7 @@ footer{
 		border-bottom:none;
 		display: none;
 		margin-top: 62px;
+		z-index: 0;
 		a{
 			img{
 				display: none;
@@ -1330,7 +1529,7 @@ footer{
 			}
 		}
 	}
-	#nuline{
+	#BUYGOLD{
 		.wrapper{
 			h1{
 				font-size: 40px;
@@ -1371,7 +1570,7 @@ footer{
 			}
 		}
 	}
-	#pirma{
+	#SELGOLD{
 		.wrapper{
 			h1{
 				font-size: 40px;
@@ -1411,7 +1610,7 @@ footer{
 			}
 		}
 	}
-	#antra{
+	#FAQ{
 		.wrapper{
 			div{
 				h1{
@@ -1427,7 +1626,7 @@ footer{
 			}
 		}
 	}
-	#trecia{
+	#ABOUTME{
 		.wrapper{
 			h1{
 				font-size: 40px;
@@ -1438,7 +1637,7 @@ footer{
 			}
 		}
 	}
-	#ketvirta{
+	#COMMENTS{
 		.wrapper{
 			h1{
 				font-size: 40px;
@@ -1452,7 +1651,7 @@ footer{
 			}
 		}
 	}
-	#penkta{
+	#CONTACT{
 		.wrapper{
 			h1{
 				font-size: 40px;
@@ -1514,7 +1713,7 @@ footer{
 			}
 		}
 	}
-	#nuline{
+	#BUYGOLD{
 		.wrapper{
 			h1{
 				font-size: 40px;
@@ -1574,7 +1773,7 @@ footer{
 			}
 		}
 	}
-	#pirma{
+	#SELGOLD{
 		.wrapper{
 			h1{
 			}
@@ -1618,7 +1817,7 @@ footer{
 			}
 		}
 	}
-	#trecia{
+	#ABOUTME{
 		.wrapper{
 			h1{
 				margin-left: 26%;
@@ -1658,7 +1857,7 @@ footer{
 			}
 		}
 	}
-	#nuline{
+	#BUYGOLD{
 		height: 100%;
 		.wrapper{
 			h1{
@@ -1716,7 +1915,7 @@ footer{
 			}
 		}
 	}
-	#pirma{
+	#SELGOLD{
 		height: 100%;
 		.wrapper{
 			h1{
@@ -1776,7 +1975,7 @@ footer{
 			}
 		}
 	}
-	#trecia{
+	#ABOUTME{
 		.wrapper{
 			h1{
 			}
@@ -1816,14 +2015,14 @@ footer{
 			}
 		}
 	}
-	#nuline{
+	#BUYGOLD{
 		.wrapper{
 			h1{
 				font-size: 40px;
 			}
 		}
 	}
-	#trecia{
+	#ABOUTME{
 		.wrapper{
 			h1{
 			}
@@ -1835,7 +2034,7 @@ footer{
 	}
 }
 @media only screen and(max-width: 680px){
-	#trecia{
+	#ABOUTME{
 		.wrapper{
 			h1{
 			}
@@ -1873,7 +2072,7 @@ footer{
 			}
 		}
 	}
-	#trecia{
+	#ABOUTME{
 		.wrapper{
 			h1{
 				margin-left: 30%;
@@ -1884,7 +2083,7 @@ footer{
 			}
 		}
 	}
-	#ketvirta{
+	#COMMENTS{
 		.wrapper{
 			h1{
 			}
@@ -1907,6 +2106,22 @@ footer{
 			}
 		}
 	}
+	#CONTACT{
+		.wrapper{
+			h1{
+			}
+			div{
+				p{
+				}
+				div{
+					margin: auto;
+					margin-top: 3%;
+					padding-bottom:0;
+					width: 100%;
+				}
+			}
+		}
+	}
 }
 @media only screen and(max-width: 384px){
 	header{
@@ -1918,13 +2133,11 @@ footer{
 		}
 	}
 	nav{
-
 		a{
 			img{
 				display: none;
 			}
 		}
-
 		ul{
 			li{		
 				a{
@@ -1937,7 +2150,7 @@ footer{
 			}
 		}
 	}
-	#nuline{
+	#BUYGOLD{
 		height: 100%;
 		.wrapper{
 			h1{
@@ -1962,7 +2175,6 @@ footer{
 							margin-bottom: 13%;
 						}
 						#milai{
-							// margin-bottom:30px;
 						}
 						input{
 						}
@@ -1991,7 +2203,6 @@ footer{
 							margin-bottom: 13%;
 						}
 						#milaia{
-							// margin-bottom:30px;
 						}
 						input{
 						}
@@ -2006,7 +2217,7 @@ footer{
 			}
 		}
 	}
-	#pirma{
+	#SELGOLD{
 		height: 100%;
 		.wrapper{
 			h1{
@@ -2029,8 +2240,7 @@ footer{
 						.p{
 							margin-bottom: 13%;
 						}
-						#milaib{
-							// margin-bottom:30px;
+						#milaib{							
 						}
 						input{
 						}
@@ -2059,7 +2269,6 @@ footer{
 							margin-bottom: 13%;
 						}
 						#milaic{
-							// margin-bottom:30px;
 						}
 						input{
 						}
@@ -2074,18 +2283,129 @@ footer{
 			}
 		}
 	}
-	#trecia{
+	#ABOUTME{
 		.wrapper{
 			h1{
-				margin-left: 21%;
-				// padding-top: 40%; //jei desiu kita logotipa
 			}
 			p{
-				width: 74%;
-				margin-left: 20%;
 			}
 		}
 	}
+	#CONTACT{
+		.wrapper{
+			h1{
+			}
+			div{
+				p{
+				}
+				div{
+					width: 100%;
+					div{
+						width:45%;
+						a{
+							.visi{
+								height: 70px;
+							}
+						}
+						p{
+						}
+					}
+					div{
+						a{
+							.visi{
+							}
+						}
+						p{
+
+						}
+					}
+					div{
+						width:45%;
+
+						a{
+							.visii{
+								height: 70px;
+							}
+						}
+						p{
+							font-size: 11px;
+						}	
+					}
+				}
+			}
+		}
+	}	
+}
+@media only screen and(max-width: 340px){
+	#CONTACT{
+		.wrapper{
+			h1{
+				color: black;
+			}
+			div{
+				p{
+				}
+				div{
+					width: 250px;
+
+					div{
+						width:195px;
+						display: block;
+						a{
+							.visi{
+								height: 60px;
+								display: inline-block;
+								vertical-align: middle;
+							
+							}
+						}
+						p{
+							margin: 0;
+							vertical-align: middle;
+							display: inline-block;
+							margin-left: 5%;
+						}
+					}
+					div{
+						display: block;
+						a{
+							.visi{
+						
+							}
+						}
+						p{
+							margin: 0;
+							vertical-align: middle;
+							margin-left: 5%;
+						}
+					}
+					div{
+						width: 195px;
+						display: block;
+						margin: 0 auto;
+   						margin-top: 5%;
+
+						a{
+							.visii{
+								margin: 0;
+								height: 60px;
+								display: inline-block;
+								vertical-align: middle;
+								
+							}
+						}
+						.ppp{
+							margin: 0;
+							vertical-align: middle;
+							font-size: 11px;
+							display: inline-block;
+							margin-left: 5%;
+						}	
+					}
+				}
+			}
+		}
+	}	
 }
 b { font-weight: bold; }
 
